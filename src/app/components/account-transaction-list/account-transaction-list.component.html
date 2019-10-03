@@ -1,0 +1,17 @@
+<mat-list>
+  <ng-container *ngFor="let date of transactionDates">
+    <div class="account-transaction-list-headline">
+      <mat-icon>date_range</mat-icon>
+      &nbsp;&nbsp;{{ date }}
+    </div>
+    <mat-list-item *ngFor="let transaction of groupByAccountTransactions[date]">
+      <div class="round-icon" mat-list-icon>
+        <mat-icon>shopping_cart</mat-icon>
+      </div>
+
+      <div mat-line class="uxg-subtitle-1">{{ transaction.account.description || 'No description' }}</div>
+      <div mat-line class="uxg-body-2">{{ transaction.account.nickname }}</div>
+      {{ transaction.transactionAmount | currency }}
+    </mat-list-item>
+  </ng-container>
+</mat-list>

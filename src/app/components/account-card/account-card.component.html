@@ -1,0 +1,15 @@
+<mat-card class="account-card">
+  <mat-card-content>
+    <div class="round-icon">
+      <mat-icon aria-hidden="false" aria-label="Account card">credit_card</mat-icon>
+    </div>
+    <div>
+      <div class="uxg-body-1">{{ accountOverview.nickname }}</div>
+      <div class="uxg-h5">{{ accountOverview.currentBalance | currency }}</div>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-divider></mat-divider>
+    <div class="uxg-body-2 account-card-number-padding">{{ accountOverview.accountNumber }}</div>
+  </mat-card-footer>
+</mat-card>

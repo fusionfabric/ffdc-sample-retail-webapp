@@ -1,0 +1,63 @@
+<mat-card>
+  <mat-card-title>
+    <div>{{ account.nickname }}</div>
+  </mat-card-title>
+  <mat-card-content>
+    <div class="account-card-detail-summary">
+      <div class="uxg-avatar"></div>
+      <div class="account-card-detail-summary-info">
+        <div class="uxg-body-1">Account Number</div>
+        <div class="uxg-subtitle-1">{{ account.accountNumber }}</div>
+      </div>
+    </div>
+    <div class="account-detail-card-content">
+      <div class="account-detail-card-content__static">
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title">
+            Card type
+          </div>
+          <div>
+            {{ account.accountType || 'no available' }}
+          </div>
+        </div>
+
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title">
+            Owner
+          </div>
+          <div>
+            {{ account.ownerName || 'no available' }}
+          </div>
+        </div>
+
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title">
+            Created date
+          </div>
+          <div>
+            {{ account.openDate || 'no available' }}
+          </div>
+        </div>
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title">
+            Alternate account number
+          </div>
+          <div>
+            {{ account.alternateAccountNumber || 'no available' }}
+          </div>
+        </div>
+      </div>
+      <mat-divider [vertical]="true"></mat-divider>
+      <div class="account-detail-card-content__status">
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title">Interest paid</div>
+          <div>{{accountInterestPaid.interestThisYear}}</div>
+        </div>
+        <div class="account-detail-card-content__line">
+          <div class="uxg-subtitle-2 account-detail-card-content__line-title"> Interest paid last year</div>
+          <div>{{accountInterestPaid.interestLastYear}}</div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

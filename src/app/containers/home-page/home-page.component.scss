@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 248px;
+
+  .home-page-welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 128px 0px 64px 32px;
+  }
+
+  .home-page-product-list {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    justify-content: left;
+  }
+  .home-page-product-item {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .home-page-product-item-label {
+      padding: 26px 0px
+    }
+  }
+}
+

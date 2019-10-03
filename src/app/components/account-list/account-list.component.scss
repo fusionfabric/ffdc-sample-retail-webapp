@@ -1,0 +1,8 @@
+.account-list {
+  display: flex;
+  flex-wrap: wrap;
+  >.account-card {
+    margin-right: 32px;
+    margin-top: 16px;
+  }
+}

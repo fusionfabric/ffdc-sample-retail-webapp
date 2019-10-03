@@ -1,0 +1,14 @@
+@mixin account-transaction-list-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $warn: map-get($theme, warn);
+
+  .account-transaction-list {
+    .account-transaction-list-headline {
+        background-color: mat-color($primary, 'lighter', 0.2);
+        color: mat-color($primary);
+    }
+  }
+}

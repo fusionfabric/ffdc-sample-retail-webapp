@@ -1,0 +1,23 @@
+@mixin account-detail-page-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $warn: map-get($theme, warn);
+
+  .account-detail-page {
+    .acount-detail-page-overview {
+      background-color: mat-color($primary);
+      .acount-detail-page-overview-account-text {
+        color: rgba(mat-contrast($primary, A100), 0.8);
+      }
+      color: mat-contrast($primary, A100);
+    }
+    .round-icon {
+      background-color: mat-color($primary, 'lighter', 0.7)
+    }
+    .mat-stroked-button:not([disabled]) {
+      border-color: rgba(mat-contrast($primary, A100), 0.8);
+    }
+  }
+}

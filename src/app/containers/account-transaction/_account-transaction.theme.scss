@@ -1,0 +1,11 @@
+@mixin account-transaction-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $warn: map-get($theme, warn);
+
+  .mat-tab-label-active > .mat-tab-label-content {
+    color: mat-color($primary)
+  }
+}

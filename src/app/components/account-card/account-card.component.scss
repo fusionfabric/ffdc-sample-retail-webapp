@@ -1,0 +1,14 @@
+.account-card {
+  mat-card {
+    width: 263px;
+    height: 96px;
+    mat-card-content {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .account-card-number-padding {
+      padding: 4px 32px 8px 32px;
+    }
+  }
+}

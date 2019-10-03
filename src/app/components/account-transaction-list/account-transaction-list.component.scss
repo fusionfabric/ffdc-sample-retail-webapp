@@ -1,0 +1,19 @@
+.account-transaction-list {
+  mat-list {
+    max-height: 448px;
+  }
+  .account-transaction-list-headline {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+  mat-list-item {
+    padding-left: 64px;
+  }
+  .uxg-subtitle-1 {
+    font-weight: 500!important;
+  }
+  .uxg-body-2 {
+    font-weight: 300!important;
+  }
+}

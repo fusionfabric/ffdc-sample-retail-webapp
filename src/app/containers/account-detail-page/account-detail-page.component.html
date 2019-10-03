@@ -1,0 +1,30 @@
+<div class="acount-detail-page-overview">
+  <div class="acount-detail-page-overview-account-text uxg-display-4">{{ acountsOverview.nickname }}</div>
+  <div class="acount-detail-page-overview-info">
+    <div class="round-icon">
+      <mat-icon aria-hidden="false" aria-label="Account">credit_card</mat-icon>
+    </div>
+    <div class="acount-detail-page-overview-info-detail">
+      <div class="uxg-subtitle-2">Current Balance:</div>
+      <div class="uxg-h5">{{ acountsOverview.currentBalance | currency }}</div>
+    </div>
+    <div class="acount-detail-page-overview-info-detail">
+      <div class="uxg-subtitle-2">Available Balance:</div>
+      <div class="uxg-h5">{{ acountsOverview.availableBalance | currency }}</div>
+    </div>
+    <div class="acount-detail-page-overview-info-action">
+      <button mat-stroked-button>Transfer</button>
+      <button mat-stroked-button>Withhold</button>
+    </div>
+  </div>
+</div>
+<ng-container *ngIf="account">
+  <div class="account-page-detail-page-content">
+    <div class="account-page-detail-page-content-column">
+      <ffdc-account-detail-card [account]="account"></ffdc-account-detail-card>
+    </div>
+    <div class="account-page-detail-page-content-column">
+      <ffdc-account-transaction [accountId]="account.accountId"></ffdc-account-transaction>
+    </div>
+  </div>
+</ng-container>

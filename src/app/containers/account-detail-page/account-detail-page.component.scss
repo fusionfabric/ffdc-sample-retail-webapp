@@ -1,0 +1,44 @@
+.account-detail-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 32px;
+  .acount-detail-page-overview {
+    display: flex;
+    height: 200px;
+    flex-grow: 100%;
+    margin-bottom: 32px;
+    padding: 32px 64px 0px 64px;
+    flex-direction: column;
+    .acount-detail-page-overview-info {
+      display: flex;
+      padding-top: 32px;
+      align-items: center;
+      .acount-detail-page-overview-info-detail {
+        display: flex;
+        flex-direction: column;
+        padding-right: 64px;
+        .uxg-subtitle-2  {
+          padding-bottom: 8px;
+          margin-top: 16px;
+        }
+      }
+      .acount-detail-page-overview-info-action {
+        display: flex;
+        min-width: 196px;
+        justify-content: space-between;
+      }
+    }
+  }
+  .account-page-detail-page-content {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 64px;
+    .account-page-detail-page-content-column {
+      display: flex;
+      flex-direction: column;
+      flex: 50%;
+      padding-left: 32px;
+    }
+  }
+}

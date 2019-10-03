@@ -1,0 +1,35 @@
+<mat-card>
+  <div class="account-transaction-header">
+    <div mat-card-title>Last month transactions</div>
+    <button mat-button color="neutral">
+      <mat-icon>search</mat-icon>&nbsp;
+      <span class="uxg-body-1">Search</span>
+    </button>
+  </div>
+  <mat-tab-group [selectedIndex]="selectedTabIndex" (selectedIndexChange)="setSelectedTabIndex($event)">
+    <mat-tab label="View All">
+      <ng-container *ngIf="searching$ | async; else listAccountTransactions">
+        <div class="account-transaction-spinner">
+          <mat-spinner></mat-spinner>
+        </div>
+      </ng-container>
+    </mat-tab>
+    <mat-tab label="Incomes">
+      <ng-container *ngIf="searching$ | async; else listAccountTransactions">
+        <div class="account-transaction-spinner">
+          <mat-spinner></mat-spinner>
+        </div>
+      </ng-container>
+    </mat-tab>
+    <mat-tab label="Expenses">
+      <ng-container *ngIf="searching$ | async; else listAccountTransactions">
+        <div class="account-transaction-spinner">
+          <mat-spinner></mat-spinner>
+        </div>
+      </ng-container>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+<ng-template #listAccountTransactions>
+  <ffdc-account-transaction-list [accountTransactions]="accountTransactions"></ffdc-account-transaction-list>
+</ng-template>

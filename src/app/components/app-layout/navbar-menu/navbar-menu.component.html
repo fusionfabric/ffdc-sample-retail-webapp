@@ -1,0 +1,94 @@
+<ng-container *ngIf="displayMode == 'breadcrumb'; then breadcrumbMenu; else defaultMenu">
+
+</ng-container>
+
+<ng-template #breadcrumbMenu>
+    <ng-container *ngIf="!canGoBack; else goBackBreadcrumb">
+      <ul class="uxg-breadcrumb" *ngIf="!handsetLayout; else handsetBreadcrumb">
+        <ng-container *ngFor="let navigationNode of navigationNodes; last as isLast; first as isFirst">
+          <li *ngIf="!isLast; else lastItem">
+            <a
+              mat-flat-button
+              [ngClass]="{ 'uxp-navbar-product-name': isFirst }"
+              [routerLink]="navigationNode.url">
+              {{ navigationNode.title }}
+            </a>
+          </li>
+          <ng-template #lastItem>
+            <li *ngIf="lastNagivationNodeChildren; else lastSingleItem">
+              <button [matMenuTriggerFor]="menu" mat-button color="primary">
+                {{ navigationNode.title }}
+                <mat-icon>expand_more</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <mat-nav-list class="uxg-nav-list-level">
+                  <a
+                    *ngFor="let childNavigationNode of lastNagivationNodeChildren"
+                    [routerLink]="childNavigationNode.url"
+                    [ngClass]="{ 'list-item-selected': childNavigationNode.title === navigationNode.title }"
+                    mat-list-item>
+                    <mat-icon mat-list-icon>filter_none</mat-icon>
+                    <p>{{ childNavigationNode.title }}</p>
+                  </a>
+                </mat-nav-list>
+              </mat-menu>
+            </li>
+          </ng-template>
+          <ng-template #lastSingleItem>
+            <li>
+              <span
+                [ngClass]="{
+                  'uxg-h6': isFirst,
+                  'navbar-breadcrumb-label': !isFirst
+                }"
+                >{{ navigationNode.title }}</span
+              >
+            </li>
+          </ng-template>
+        </ng-container>
+      </ul>
+
+      <ng-template #handsetBreadcrumb>
+        <ng-container *ngIf="lastNagivationNodes">
+          <button [matMenuTriggerFor]="menu" mat-button color="primary">
+            {{ activeNode?.title }}
+            <mat-icon>expand_more</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <mat-nav-list class="uxg-nav-list-level">
+              <a
+                *ngFor="let childNavigationNode of lastNagivationNodes"
+                (click)="nodeChosen.emit(childNavigationNode)"
+                [ngClass]="{ 'list-item-selected\': ': childNavigationNode.title === activeNode.title }"
+                mat-list-item
+              >
+                <mat-icon mat-list-icon>filter_none</mat-icon>
+                <p>{{ childNavigationNode.title }}</p>
+              </a>
+            </mat-nav-list>
+          </mat-menu>
+        </ng-container>
+        <ng-container *ngIf="!lastNagivationNodes">
+          <span class="navbar-breadcrumb-label">{{ activeNode?.title }}</span>
+        </ng-container>
+      </ng-template>
+    </ng-container>
+    <!-- back button navigation : settings/user/notifications -->
+
+</ng-template>
+
+
+<ng-template #defaultMenu>
+  test
+</ng-template>
+
+<ng-template #goBackBreadcrumb>
+    <button mat-icon-button class="toolbar-back-icon" color="accent" aria-label="Menu">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <h5 class="uxg-h5">{{ navigationNodes[navigationNodes.length - 1].title }}</h5>
+</ng-template>
+
+
+
+

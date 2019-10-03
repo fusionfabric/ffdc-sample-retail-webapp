@@ -1,0 +1,38 @@
+.account-detail-card {
+  mat-card {
+    max-width: 629px;
+  }
+  .account-card-detail-summary {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+    .account-card-detail-summary-info {
+      display: flex;
+      padding-left: 16px;
+      flex-direction: column
+    }
+  }
+  .account-detail-card-content {
+    display: flex;
+    .account-detail-card-content__static {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding-right: 16px;
+    }
+    .account-detail-card-content__status {
+      display: flex;
+      padding-left: 16px;
+      flex: 1;
+      flex-direction: column;
+    }
+    .account-detail-card-content__line {
+      display: flex;
+      padding-bottom: 8px;
+      .account-detail-card-content__line-title {
+        min-width: 196px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<ng-container *ngIf="sidenavContent; else navbar" hasBackdrop="true">
+  <mat-sidenav-container class="uxg-nav app-layout-container">
+    <mat-sidenav #sidenav mode="over">
+      <ng-template [cdkPortalOutlet]="sidenavContent.content"></ng-template>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <ng-container *ngTemplateOutlet="navbar"></ng-container>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>
+
+<ng-template #navbar>
+  <ng-container *ngIf="navbarContent; else content">
+    <button *ngIf="sidenavContent" class="app-layout-toggle-menu-btn" mat-icon-button (click)="toggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-toolbar class="uxg-toolbar uxg-toolbar-elevated">
+      <ng-template [cdkPortalOutlet]="navbarContent.content"></ng-template>
+    </mat-toolbar>
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </ng-container>
+</ng-template>
+
+<ng-template #content>
+  <div class="app-content">
+    <ng-content></ng-content>
+  </div>
+</ng-template>

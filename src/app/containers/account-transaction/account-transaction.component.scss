@@ -1,0 +1,15 @@
+.account-transaction {
+  display: flex;
+  flex-direction: column;
+  .account-transaction-header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding-bottom: 16px;
+  }
+  .account-transaction-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+  }
+}

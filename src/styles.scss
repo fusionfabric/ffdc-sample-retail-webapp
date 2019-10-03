@@ -1,0 +1,17 @@
+@import '~@ffdc/uxg-angular-theme/all-theme';
+@import './app/components/account-card/account-card.theme';
+@import './app/components/app-layout/app-layout.theme';
+@import './app/components/account-transaction-list/account-transaction-list.theme';
+
+@import './app/containers/account-page/account-page.theme';
+@import './app/containers/account-detail-page/account-detail-page.theme';
+@import './app/containers/account-transaction/account-transaction.theme';
+@import './app/app.theme';
+
+@include app-theme($uxg-light-theme);
+@include account-card-theme($uxg-light-theme);
+@include account-page-theme($uxg-light-theme);
+@include account-detail-page-theme($uxg-light-theme);
+@include app-layout-theme($uxg-light-theme);
+@include account-transaction-theme($uxg-light-theme);
+@include account-transaction-list-theme($uxg-light-theme);

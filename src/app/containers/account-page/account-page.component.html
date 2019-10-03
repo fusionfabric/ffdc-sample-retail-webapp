@@ -1,0 +1,29 @@
+<div class="account-page-acount-overview">
+  <div class="acount-page-all-acount-text uxg-display-4">All Accounts</div>
+  <div class="account-page-acount-overview-info">
+    <div class="round-icon">
+      <mat-icon  aria-hidden="false" aria-label="Account">credit_card</mat-icon>
+    </div>
+    <div class="account-page-acount-overview-info-detail">
+      <div class="uxg-subtitle-2">Current Balance:</div>
+      <div class="uxg-h5">{{allAcountsOverview.current | currency}}</div>
+    </div>
+    <div class="account-page-acount-overview-info-detail">
+      <div class="uxg-subtitle-2">Available Balance:</div>
+      <div class="uxg-h5">{{allAcountsOverview.available | currency}}</div>
+    </div>
+    <div class="account-page-acount-overview-info-action">
+      <button mat-flat-button color="primary">Transfer</button>
+      <button mat-flat-button color="accent">Withhold</button>
+    </div>
+  </div>
+</div>
+<div class="account-page-content">
+  <div class="account-page-content-column">
+    <div class="uxg-h5">Your Accounts:</div>
+    <ffdc-account-list [accounts]="accounts"></ffdc-account-list>
+  </div>
+  <div class="account-page-content-column">
+    <ffdc-account-transaction [showAllAccount]="true"></ffdc-account-transaction>
+  </div>
+</div>
