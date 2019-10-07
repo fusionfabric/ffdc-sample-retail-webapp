@@ -12,7 +12,7 @@ git clone git@github.com:fusionfabric/ffdc-sample-design-system.git
 
 2. Register FFDC application
 
-You need to register an application on [FusionFabric.cloud Developer Portal](https://developer.fusionfabric.cloud) and select `Account Information (US)` API. 
+You need to register an application on [FusionFabric.cloud Developer Portal](https://developer.fusionfabric.cloud) and select [Account Information (US) - B2C](https://developer.fusionfabric.cloud/docs?workspace=FusionCreator%20Developer%20Portal&board=API%20Docs&api=b2c-account-v1-fc77362a-c2ee-4b23-b20e-5621249eb7a4#tag/Accounts) API. 
 
 3. Setup environment variables
 
