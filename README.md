@@ -53,3 +53,6 @@ npm run start:server:debug
 ```
 
 Go to http://localhost:3000 and enjoy demo application.
+
+## License
+These sample applications are released under the Apache 2.0 License. See [LICENSE](./LICENSE) for details.
