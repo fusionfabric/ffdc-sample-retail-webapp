@@ -54,5 +54,13 @@ npm run start:server:debug
 
 Go to http://localhost:3000 and enjoy demo application.
 
+## Credentials
+For testing purpose, you can login in with one of the following credentials:
+
+| User        | Password |
+| :---------- | :------- |
+| `ffdcuser1` | `123456` |
+| `ffdcuser2` | `123456` |
+
 ## License
 These sample applications are released under the Apache 2.0 License. See [LICENSE](./LICENSE) for details.
