@@ -12,9 +12,9 @@
 
   .home-page-product-list {
     display: flex;
-    flex: 1;
     align-items: baseline;
     justify-content: left;
+    flex-wrap: wrap;
   }
   .home-page-product-item {
     padding: 0px 32px;
@@ -25,6 +25,29 @@
 
     .home-page-product-item-label {
       padding: 26px 0px
+    }
+  }
+
+}
+
+@media all and (max-width: 600px) {
+  .home-page {
+    padding-left: 32px;
+
+    .home-page-welcome {
+      padding: 32px 0px 16px 0px;
+    }
+    .home-page-product-item {
+      padding: 0px 16px;
+
+      .uxg-card-product {
+        width: 90px;
+        height: 50px;
+      }
+
+      .home-page-product-item-label {
+        padding: 8px 0px 32px 0px;
+      }
     }
   }
 }

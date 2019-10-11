@@ -5,10 +5,9 @@
   padding-bottom: 32px;
   .acount-detail-page-overview {
     display: flex;
-    height: 200px;
     flex-grow: 100%;
     margin-bottom: 32px;
-    padding: 32px 64px 0px 64px;
+    padding: 32px 64px 32px 64px;
     flex-direction: column;
     .acount-detail-page-overview-info {
       display: flex;
@@ -40,5 +39,31 @@
       flex: 50%;
       padding-left: 32px;
     }
+  }
+
+  @media all and (max-width: 600px) {
+    .acount-detail-page-overview {
+      padding: 16px 32px 16px 32px;
+
+      .round-icon {
+        display: none;
+      }
+
+      .acount-detail-page-overview-info {
+        padding-top: 8px;
+        flex-direction: column;
+        align-items: end;
+      }
+    }
+    .account-page-detail-page-content {
+      padding-left: 16px;
+      padding-right: 16px;
+      flex-direction: column;
+      .account-page-detail-page-content-column {
+        flex: 1;
+        padding-left: 0px;
+      }
+    }
+
   }
 }

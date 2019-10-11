@@ -5,10 +5,9 @@
   padding-bottom: 32px;
   .account-page-acount-overview {
     display: flex;
-    height: 200px;
     flex-grow: 100%;
     margin-bottom: 32px;
-    padding: 32px 64px 0px 64px;
+    padding: 32px 64px 32px 64px;
     flex-direction: column;
 
     .account-page-acount-overview-info {
@@ -44,5 +43,29 @@
       flex-direction: column;
       flex: 50%;
     }
+  }
+
+  @media all and (max-width: 600px) {
+    .account-page-acount-overview {
+      padding: 16px 32px 16px 32px;
+
+      .round-icon {
+        display: none;
+      }
+      .account-page-acount-overview-info {
+        padding-top: 8px;
+        flex-direction: column;
+        align-items: end;
+      }
+    }
+    .account-page-content {
+      padding-left: 16px;
+      padding-right: 16px;
+      flex-direction: column;
+      .account-page-content-column {
+        flex: 1
+      }
+    }
+
   }
 }

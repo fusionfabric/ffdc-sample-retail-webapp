@@ -11,4 +11,9 @@
       padding: 4px 32px 8px 32px;
     }
   }
+  @media all and (max-width: 600px) {
+    mat-card {
+      width: 100%
+    }
+  }
 }

@@ -59,8 +59,8 @@ body {
   .app-layout-content {
     display: flex;
     flex: 1;
-    padding-top: 60px;
-    min-height: calc(100vh - 61px);
+    padding-top: 56px;
+    min-height: calc(100vh - 56px);
   }
 
   .navbar-home-logo:not(.navbar-home-logo--dense) {
@@ -75,6 +75,16 @@ body {
     width: $uxg-logo-width / 2;
     min-width: $uxg-logo-width / 2;
     height: $uxg-logo-height / 2;
+  }
+
+  @media all and (max-width: 600px) {
+    .navbar-home-logo:not(.navbar-home-logo--dense) {
+      width: $uxg-logo-width / 2;
+      min-width: $uxg-logo-width / 2;
+      height: $uxg-logo-height / 2;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
   }
 }
 
