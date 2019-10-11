@@ -1,12 +1,20 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'ffdc-navbar-home',
   templateUrl: './navbar-home.component.html',
   styleUrls: ['./navbar-home.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    class: 'navbar-home'
+  }
 })
 export class NavbarHomeComponent implements OnInit {
+
+  @Input() dense = true;
+
+  @Input() homeUrl?: string;
 
   constructor() { }
 

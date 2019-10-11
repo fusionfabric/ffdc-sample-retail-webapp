@@ -6,7 +6,8 @@ import {
   ChangeDetectionStrategy,
   ViewEncapsulation,
   OnInit,
-  ViewChild
+  ViewChild,
+  Input
 } from '@angular/core';
 import { TemplatePortal } from '@angular/cdk/portal';
 
@@ -18,6 +19,8 @@ import { TemplatePortal } from '@angular/cdk/portal';
 })
 export class NavbarContentComponent implements OnInit {
   @ViewChild(TemplateRef, {static: true}) implicitContent!: TemplateRef<any>;
+
+  @Input() outlined = false;
 
   private contentPortal: TemplatePortal | null = null;
 

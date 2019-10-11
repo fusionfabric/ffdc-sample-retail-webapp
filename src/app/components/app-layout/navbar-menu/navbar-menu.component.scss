@@ -1,3 +1,15 @@
-.navbar-breadcrumb-label {
-  user-select: none;
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  .navbar-menu-breadcrumb__first-item {
+    font: 700 14px/16px "futura-pt", "Futura EF", Futura, "Arial Black", "Century Gothic";
+    padding: 0 16px;
+  }
+  .navbar-breadcrumb-label {
+    user-select: none;
+  }
+  ul {
+    margin: 0;
+  }
 }

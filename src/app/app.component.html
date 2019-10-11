@@ -1,26 +1,35 @@
 <ffdc-app-layout>
-  <ffdc-navbar-content>
-    <div class="uxg-toolbar-logo-small" (click)="goToHomePage()"></div>
-    <ffdc-navbar-menu *ngIf="!(isHomePage$ | async)" [navigationNodes]="navbarMenuData"></ffdc-navbar-menu>
-    <span class="fill-remaining-space"></span>
-    <button mat-icon-button color="neutral">
-      <mat-icon>search</mat-icon>
-    </button>
-    <button mat-icon-button color="neutral">
-      <mat-icon>notifications</mat-icon>
-    </button>
-    <button mat-icon-button color="neutral">
-      <mat-icon>help_outline</mat-icon>
-    </button>
-    <button mat-icon-button color="neutral">
-      <mat-icon>apps</mat-icon>
-    </button>
-    <button mat-icon-button color="gradient">
-      <mat-icon>account_circle</mat-icon>
-    </button>
-    <button mat-icon-button class="uxg-toolbar-icon-menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
+  <ffdc-navbar-content [outlined]="(isHomePage$ | async)">
+      <ffdc-navbar-home homeUrl="." [dense]="!(isHomePage$ | async)"></ffdc-navbar-home>
+      <ffdc-navbar-menu *ngIf="!(isHomePage$ | async)" [navigationNodes]="navbarMenuData"></ffdc-navbar-menu>
+      <ffdc-navbar-action-container>
+        <ffdc-navbar-action-item icon="search" title="Search">
+          <button mat-icon-button color="neutral">
+            <mat-icon>search</mat-icon>
+          </button>
+        </ffdc-navbar-action-item>
+        <ffdc-navbar-action-item icon="notifications" title="Notifications">
+          <button mat-icon-button color="neutral">
+            <mat-icon>notifications</mat-icon>
+          </button>
+        </ffdc-navbar-action-item>
+        <ffdc-navbar-action-item icon="help_outline" title="Help">
+          <button mat-icon-button color="neutral">
+            <mat-icon>help_outline</mat-icon>
+          </button>
+        </ffdc-navbar-action-item>
+        <ffdc-navbar-action-item icon="apps" title="Applications">
+          <button mat-icon-button color="neutral">
+            <mat-icon>apps</mat-icon>
+          </button>
+        </ffdc-navbar-action-item>
+        <ffdc-navbar-action-item icon="account_circle" title="My account">
+          <button mat-icon-button color="gradient">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+        </ffdc-navbar-action-item>
+      </ffdc-navbar-action-container>
+    <!-- </mat-toolbar> -->
   </ffdc-navbar-content>
   <ffdc-sidenav-content *ngIf="!(isHomePage$ | async)">
     <div class="uxg-nav-header">

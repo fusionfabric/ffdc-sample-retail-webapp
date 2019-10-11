@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services';
 
 @Component({
   selector: 'ffdc-home-page',
@@ -13,7 +14,12 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  get userName() {
+    return this.authService.getUserName();
+  }
+
+  constructor(private router: Router, private authService: AuthService) { }
+
 
   ngOnInit() {
   }

@@ -1,1 +1,14 @@
-<p>navbar-action-container works!</p>
+<ng-container *ngFor="let actionItem of actionItems">
+  <ng-container *ngTemplateOutlet="actionItem.actionItemTemplate"></ng-container>
+</ng-container>
+<button mat-icon-button [matMenuTriggerFor]="actionMenu" aria-label="Action Menu" *ngIf="actionMenuItems"
+  xPosition="before" yPosition="below">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #actionMenu panelClass="action-menu-panel">
+  <ng-template matMenuContent>
+    <ng-container *ngFor="let menuItem of actionMenuItems">
+      <ng-container *ngTemplateOutlet="menuItem.menuItemTemplate"></ng-container>
+    </ng-container>
+  </ng-template>
+</mat-menu>

@@ -58,8 +58,4 @@ export class AppComponent {
       }
     });
   }
-
-  goToHomePage() {
-    this.router.navigateByUrl('');
-  }
 }
