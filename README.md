@@ -1,9 +1,14 @@
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcode2nguyen%2Fffdc-sample-retail-webapp%2Ffeature%2Fimprovements-1%2Fazuredeploy.json)
+
+<!-- <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcode2nguyen%2Fffdc-sample-retail-webapp%2Ffeature%2Fimprovements-1%2Fazuredeploy.json" target="_blank">
+  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
+</a> -->
 # FFDC Sample Web App Using FFDC Design System
 
 This repository contains a sample application using [FFDC Design System](https://github.com/fusionfabric/finastra-design-system) for front-end and [FusionFabric.cloud](https://developer.fusionfabric.cloud) for backend service.
 
-## Demo
 <img src="retail-app-demo.gif" width="80%">
+
 
 ## Installation
 
@@ -58,12 +63,25 @@ npm run start:server:debug
 Go to http://localhost:3000 and enjoy demo application.
 
 ## Credentials
-For testing purpose, you can login in with one of the following credentials:
+For testing purpose, you can login with one of the following credentials:
 
 | User        | Password |
 | :---------- | :------- |
 | `ffdcuser1` | `123456` |
 | `ffdcuser2` | `123456` |
+
+## Environement variables
+| Variable                  | Default value                               |
+| :-------------------------| :------------------------------------------ |
+| `CLIENT_ID`               |                                             |
+| `CLIENT_SECRET`           |                                             |
+| `SESSION_SECRET`          |                                             |
+| `FFDC_URL`                | `https://api.fusionfabric.cloud`            |
+| `PORT`                    | `3000`                                      |
+| `HOST`                    |                                  |
+| `AUTHORIZATION_WELLKNOWN` | `${FFDC_URL}/login/v1/sandbox/.well-known/openid-configuration`|
+| `LOGOUT_URL`              | `https://login.microsoftonline.com/finastra.onmicrosoft.com/oauth2/v2.0/logout` |
+| `ROOT_URL`                | `$HOST` or `http://localhost:${PORT}`       |
 
 ## License
 These sample applications are released under the Apache 2.0 License. See [LICENSE](./LICENSE) for details.
