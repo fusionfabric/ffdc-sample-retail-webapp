@@ -2,6 +2,9 @@
 
 This repository contains a sample application using [FFDC Design System](https://github.com/fusionfabric/finastra-design-system) for front-end and [FusionFabric.cloud](https://developer.fusionfabric.cloud) for backend service.
 
+## Demo
+<img src="retail-app-demo.gif" width="80%">
+
 ## Installation
 
 1. Clone this repository 
