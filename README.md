@@ -1,8 +1,5 @@
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcode2nguyen%2Fffdc-sample-retail-webapp%2Ffeature%2Fimprovements-1%2Fazuredeploy.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffusionfabric%2Fffdc-sample-retail-webapp%2Fmaster%2Fazuredeploy.json)
 
-<!-- <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcode2nguyen%2Fffdc-sample-retail-webapp%2Ffeature%2Fimprovements-1%2Fazuredeploy.json" target="_blank">
-  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
-</a> -->
 # FFDC Sample Web App Using FFDC Design System
 
 This repository contains a sample application using [FFDC Design System](https://github.com/fusionfabric/finastra-design-system) for front-end and [FusionFabric.cloud](https://developer.fusionfabric.cloud) for backend service.
