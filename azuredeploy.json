@@ -26,14 +26,14 @@
     },
     "repoURL": {
       "type": "string",
-      "defaultValue": "https://github.com/code2nguyen/ffdc-sample-retail-webapp.git",
+      "defaultValue": "https://github.com/fusionfabric/ffdc-sample-retail-webapp.git",
       "metadata": {
         "description": "The URL for the GitHub repository that contains the project to deploy."
       }
     },
     "branch": {
       "type": "string",
-      "defaultValue": "feature/improvements-1",
+      "defaultValue": "master",
       "metadata": {
         "description": "The branch of the GitHub repository to use."
       }
@@ -49,15 +49,13 @@
       "type": "string",
       "metadata": {
         "description": "FFDC Client ID."
-      },
-      "defaultValue": "a0d495a3-1fae-4f54-bc9d-24fec4dd96f4"
+      }
     },
     "ffdcClientSecret": {
       "type": "string",
       "metadata": {
         "description": "FFDC Client Secret."
-      },
-      "defaultValue": "4b64b385-a04f-4c28-b0ad-5b1eb5a673a0"
+      }
     },
     "ffdcAuthorizationWellKnown": {
       "type": "string",
