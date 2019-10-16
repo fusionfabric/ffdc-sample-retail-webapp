@@ -5,4 +5,19 @@
   $foreground: map-get($theme, foreground);
   $warn: map-get($theme, warn);
 
+  .app-layout {
+    .navbar-home-logo {
+      background: center / contain no-repeat url(map-get($foreground, logo));
+    }
+
+    .app-layout-navbar {
+      background: mat-color($background, app-bar);
+    }
+
+    .action-menu-panel {
+      @include mat-elevation(4);
+    }
+  }
+
 }
+

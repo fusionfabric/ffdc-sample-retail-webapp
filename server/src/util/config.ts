@@ -19,17 +19,10 @@ export const AUTHORIZATION_WELLKNOWN =
 export const LOGOUT_URL =
   process.env.LOGOUT_URL || 'https://login.microsoftonline.com/finastra.onmicrosoft.com/oauth2/v2.0/logout';
 
-export let ROOT_URL = process.env.ROOT_URL;
+export const HOST = process.env.HOST || (process.env.WEBSITE_HOSTNAME ? `https://${process.env.WEBSITE_HOSTNAME}` : '');
+export const ROOT_URL = HOST ? HOST : `http://localhost:${PORT}`;
 export const TIMEOUT = process.env.TIMEOUT ? parseInt(process.env.TIMEOUT, 0) : 6000;
 
-if (!ROOT_URL) {
-  if (!prod) {
-    ROOT_URL = 'http://localhost:3000';
-  } else {
-    logger.error('No redirect url. Set REDIRECT_URI environment variable.');
-    process.exit(1);
-  }
-}
 
 export const LOGIN_URL = `${ROOT_URL}/login`;
 

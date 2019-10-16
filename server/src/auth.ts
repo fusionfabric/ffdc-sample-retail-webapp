@@ -39,7 +39,7 @@ export async function initialize(app: Application) {
       (req: Request, tokenset: any, done: (err: any, user: any) => void) => {
         done(null, {
           id: tokenset.claims.sub,
-          username: tokenset.claims.name || tokenset.claims.sub,
+          username: tokenset.claims.name || tokenset.claims.username || tokenset.claims.sub,
           access_token: tokenset.access_token,
           refresh_token: tokenset.refresh_token,
           expires_at: tokenset.expires_at

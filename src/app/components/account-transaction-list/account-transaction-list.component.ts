@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, Input } from '@angular/core';
 import { AccountTransaction } from '../../store/models/transaction';
-import groupBy from 'lodash/groupby';
+import groupBy from 'lodash/groupBy';
 import { Dictionary } from 'lodash';
 import { compareDate } from '../../utils';
 

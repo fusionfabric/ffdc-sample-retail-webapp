@@ -1,8 +1,21 @@
 .account-list {
   display: flex;
   flex-wrap: wrap;
-  >.account-card {
+  > .account-card {
     margin-right: 32px;
     margin-top: 16px;
+    display: flex;
+    flex: 1;
+  }
+}
+@media all and (max-width: 600px) {
+  .account-list {
+    padding-bottom: 32px;
+    > .account-card {
+      margin-right: 0px;
+      margin-top: 16px;
+      display: flex;
+      flex: 1;
+    }
   }
 }

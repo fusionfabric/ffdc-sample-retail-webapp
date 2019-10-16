@@ -2,11 +2,9 @@ import {
   Component,
   OnInit,
   ViewEncapsulation,
-  ChangeDetectionStrategy,
   ViewChild,
-  ContentChildren,
-  ContentChild,
-  Query
+  ContentChild
+
 } from '@angular/core';
 import { NavbarContentComponent } from './navbar-content/navbar-content.component';
 import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
@@ -25,6 +23,8 @@ export class AppLayoutComponent implements OnInit {
   @ContentChild(NavbarContentComponent, { static: false }) navbarContent: NavbarContentComponent | undefined;
   @ContentChild(SidenavContentComponent, { static: false }) sidenavContent: SidenavContentComponent | undefined;
   @ViewChild('sidenav', { static: false }) sidenav: MatSidenav | undefined;
+
+
 
   constructor() {}
 

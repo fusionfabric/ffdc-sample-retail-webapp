@@ -10,6 +10,7 @@ import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
 import { NavbarActionContainerComponent } from './navbar-action-container/navbar-action-container.component';
 import { RouterModule } from '@angular/router';
+import { NavbarActionItemComponent } from './navbar-action-item/navbar-action-item.component';
 
 @NgModule({
   imports: [MaterialModules, CommonModule, RouterModule],
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     NavbarContentComponent,
     NavbarMenuComponent,
     NavbarHomeComponent,
-    NavbarActionContainerComponent
+    NavbarActionContainerComponent,
+    NavbarActionItemComponent
   ],
   declarations: [
     AppLayoutComponent,
@@ -27,7 +29,8 @@ import { RouterModule } from '@angular/router';
     NavbarContentComponent,
     NavbarMenuComponent,
     NavbarHomeComponent,
-    NavbarActionContainerComponent
+    NavbarActionContainerComponent,
+    NavbarActionItemComponent
   ],
   providers: []
 })
