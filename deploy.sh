@@ -102,23 +102,9 @@ echo Handling node.js deployment.
 # 1. Select node version
 selectNodeVersion
 
-# 2. Run npm install on repos folder
-cd "$DEPLOYMENT_SOURCE"
-echo "Running $NPM_CMD install"
-eval $NPM_CMD install
-exitWithMessageOnError "npm failed"
-
-echo "Running $NPM_CMD build:server"
-eval $NPM_CMD run build:server
-exitWithMessageOnError "npm run build:serve failed"
-
-echo "Running $NPM_CMD build -- --prod"
-eval $NPM_CMD run build -- --prod
-exitWithMessageOnError "npm run build -- --prod failed"
-
 # 2. KuduSync
 if [[ "$IN_PLACE_DEPLOYMENT" -ne "1" ]]; then
-  "$KUDU_SYNC_CMD" -v 50 -f "$DEPLOYMENT_SOURCE" -t "$DEPLOYMENT_TARGET" -n "$NEXT_MANIFEST_PATH" -p "$PREVIOUS_MANIFEST_PATH" -i ".git;.hg;.deployment;deploy.sh;e2e;node_modules"
+  "$KUDU_SYNC_CMD" -v 50 -f "$DEPLOYMENT_SOURCE" -t "$DEPLOYMENT_TARGET" -n "$NEXT_MANIFEST_PATH" -p "$PREVIOUS_MANIFEST_PATH" -i ".git;.hg;.deployment;deploy.sh;e2e;src;.github;.editorconfig"
   exitWithMessageOnError "Kudu Sync failed"
 fi
 

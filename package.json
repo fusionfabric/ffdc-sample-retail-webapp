@@ -6,6 +6,7 @@
     "concurrently": "concurrently",
     "build:all": "concurrently -p \"[{name}]\" -n \"Angular,Server\" -c \"yellow.bold,cyan.bold\" \"npm run build\" \"npm run build:server\"",
     "build": "ng build",
+    "start": "node ./dist/server/server.js",
     "build:server": "tsc -p server/tsconfig.server.json",
     "build:server:watch": "tsc -p server/tsconfig.server.json -w",
     "start:server": "node dist/server/server.js",
