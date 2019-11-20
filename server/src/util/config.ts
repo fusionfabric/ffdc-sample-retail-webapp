@@ -1,7 +1,8 @@
 import logger from './logger';
 import dotenv from 'dotenv';
+import { resolve } from 'path';
 
-dotenv.config();
+dotenv.config({ path: resolve(__dirname, '../../../.env') });
 
 export const ENVIRONMENT = process.env.NODE_ENV;
 const prod = ENVIRONMENT === 'production'; // Anything else is treated as 'dev'
@@ -23,7 +24,6 @@ export const HOST = process.env.HOST || (process.env.WEBSITE_HOSTNAME ? `https:/
 export const ROOT_URL = HOST ? HOST : `http://localhost:${PORT}`;
 export const TIMEOUT = process.env.TIMEOUT ? parseInt(process.env.TIMEOUT, 0) : 6000;
 
-
 export const LOGIN_URL = `${ROOT_URL}/login`;
 
 if (!SESSION_SECRET) {
@@ -40,7 +40,6 @@ if (!CLIENT_SECRET) {
   logger.error('No client secret. Set CLIENT_SECRET environment variable.');
   process.exit(1);
 }
-
 
 export const AuthConfig = {
   client_id: CLIENT_ID!,
