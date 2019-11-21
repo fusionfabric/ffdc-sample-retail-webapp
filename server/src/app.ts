@@ -10,7 +10,7 @@ import { ClientRequest } from 'http';
 import logger from './util/logger';
 
 import * as auth from './auth';
-import { PORT, SESSION_SECRET, TIMEOUT } from './util/config';
+import { PORT, SESSION_SECRET, TIMEOUT, FFDC_URL } from './util/config';
 const httpPorxy = require('http-proxy');
 const queryString = require('querystring');
 
@@ -112,7 +112,7 @@ app.get('/logout', (req, res) => {
 app.get('/api/user', auth.isAuthenticated, userController.getUser);
 app.use('/proxy', (req, res) => {
   proxy.web(req, res, {
-    target: 'https://api.fusionfabric.cloud/retail-us/me/account/v1'
+    target: `${FFDC_URL}/retail-us/me/account/v1`
   }, (err: any) => {
     logger.error(err.message);
     res.writeHead(500, {
