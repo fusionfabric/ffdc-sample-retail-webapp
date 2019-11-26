@@ -81,4 +81,4 @@ For testing purpose, you can login with one of the following credentials:
 | `ROOT_URL`                | `$HOST` or `http://localhost:${PORT}`       |
 
 ## License
-These sample applications are released under the Apache 2.0 License. See [LICENSE](./LICENSE) for details.
+These sample applications are released under the MIT License. See [LICENSE](./LICENSE) for details.
