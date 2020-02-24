@@ -18,6 +18,8 @@ export class AccountTransactionApiService {
   searchAccountTransactions(accountId: string, filter: AccountTransactionFilter): Observable<AccountTransaction[]> {
     const params = new HttpParams();
     if (filter.startDate) {
+      // Hotfix
+      filter.startDate = '2019-12-20';
       params.append('startDate', filter.startDate);
     }
     if (filter.endDate) {
