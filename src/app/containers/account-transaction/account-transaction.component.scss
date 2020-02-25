@@ -6,11 +6,24 @@
     justify-content: space-between;
     flex: 1;
     padding-bottom: 16px;
+
+    .mat-form-field-underline {
+      display: none;
+    }
   }
   .account-transaction-spinner {
     display: flex;
     justify-content: center;
     padding: 32px 0px;
+  }
+
+  .no-transactions {
+    text-align: center;
+
+    mat-icon {
+      transform: scale(5);
+      margin: 70px 0 40px;
+    }
   }
 
 

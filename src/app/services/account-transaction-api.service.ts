@@ -18,12 +18,12 @@ export class AccountTransactionApiService {
   searchAccountTransactions(accountId: string, filter: AccountTransactionFilter): Observable<AccountTransaction[]> {
     const params = new HttpParams();
     if (filter.startDate) {
-      // Hotfix
-      filter.startDate = '2019-12-20';
       params.append('startDate', filter.startDate);
     }
+    let url = `${ROOT_API}/accounts/${accountId}/transactions?startDate=${filter.startDate}`;
     if (filter.endDate) {
       params.append('endDate', filter.endDate);
+      url += `&endDate=${filter.endDate}`;
     }
     if (filter.limit) {
       params.append('limit', filter.limit.toString(0));
@@ -31,7 +31,7 @@ export class AccountTransactionApiService {
     if (filter.offset) {
       params.append('limit', filter.offset.toString(0));
     }
-    return this.httpClient.get<AccountTransaction[]>(`${ROOT_API}/accounts/${accountId}/transactions?startDate=${filter.startDate}`, {
+    return this.httpClient.get<AccountTransaction[]>(url, {
       params
     });
   }

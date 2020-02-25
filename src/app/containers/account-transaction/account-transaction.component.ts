@@ -12,16 +12,19 @@ import {
   AppState,
   selectAccountTransactionsWithAccountInfo,
   isSearchingAccountTransactions,
+  selectTransactionsDate,
   selectAccountTransactionsWithAccountInfoForAccount
 } from '../../store/reducers';
 import {
   searchAllAccountTransactions,
-  searchAccountTransactions
+  searchAccountTransactions,
+  updateTransactionsSelectedDate
 } from '../../store/actions/account-transaction.actions';
 import { Observable, Subject, BehaviorSubject, combineLatest, of, iif, ReplaySubject } from 'rxjs';
 import { AccountTransaction } from '../../store/models';
 import { dateFormat } from '../../utils';
-import { takeUntil, filter, map, mergeMap, switchMap } from 'rxjs/operators';
+import { takeUntil, map, mergeMap, switchMap, take } from 'rxjs/operators';
+import { MatDatepicker } from '@angular/material/datepicker';
 @Component({
   selector: 'ffdc-account-transaction',
   templateUrl: './account-transaction.component.html',
@@ -43,31 +46,39 @@ export class AccountTransactionComponent implements OnInit, OnDestroy {
   public set accountId(value: string | undefined) {
     this._accountId = value;
     if (value) {
-      this.store.dispatch(
-        searchAccountTransactions({ accountId: value, filter: { startDate: dateFormat(this.lastMonth) } })
-      );
+      this.store.pipe(select(selectTransactionsDate), take(1)).subscribe(selectedDate => {
+        this.store.dispatch(
+          searchAccountTransactions({ accountId: value, filter: { startDate: dateFormat(selectedDate) } })
+        );
+      });
       this.accountId$.next(value);
     }
   }
   @Input() showAllAccount = false;
 
   accountTransactions: AccountTransaction[] = [];
-
+  maxDate: Date;
+  selectedDate!: Date;
+  selectedDateLabel$ = new ReplaySubject<string>(1);
   selectedTabIndex = 0;
   selectedTabIndex$ = new BehaviorSubject(0);
   searching$!: Observable<boolean>;
-  private accountId$ = new ReplaySubject<string>(1);
 
+  private accountId$ = new ReplaySubject<string>(1);
   private destroyed$ = new Subject<void>();
-  private lastMonth: Date;
+
   constructor(private store: Store<AppState>, private cd: ChangeDetectorRef) {
-    this.lastMonth = new Date();
-    this.lastMonth.setMonth(this.lastMonth.getMonth() - 1);
+    this.maxDate = new Date();
   }
 
   ngOnInit() {
+    this.store.pipe(select(selectTransactionsDate)).subscribe(selectedDate => {
+      this.selectedDate = selectedDate;
+      const dateLabel = dateFormat(selectedDate, 'MMMM YYYY');
+      this.selectedDateLabel$.next(dateLabel);
+    });
     if (this.showAllAccount) {
-      this.store.dispatch(searchAllAccountTransactions({ filter: { startDate: dateFormat(this.lastMonth) } }));
+      this.store.dispatch(searchAllAccountTransactions({ filter: { startDate: dateFormat(this.selectedDate) } }));
     }
     const getAllOrSingleAccountTransaction = iif(
       () => this.showAllAccount,
@@ -109,5 +120,30 @@ export class AccountTransactionComponent implements OnInit, OnDestroy {
   setSelectedTabIndex(index: number) {
     this.selectedTabIndex = index;
     this.selectedTabIndex$.next(index);
+  }
+
+  chosenMonthHandler(selectedDate: Date, datepicker: MatDatepicker<any>) {
+    datepicker.close();
+    const startDate = new Date(selectedDate.setDate(1));
+    const endDate = new Date(selectedDate.setDate(this.getLastDayOfMonth(selectedDate)));
+    const filter = {
+      startDate: dateFormat(startDate),
+      endDate: dateFormat(endDate)
+    };
+    if (this.showAllAccount) {
+      this.store.dispatch(searchAllAccountTransactions({filter}));
+    } else {
+      this.store.dispatch(
+        searchAccountTransactions({accountId: (this.accountId as string), filter})
+      );
+    }
+
+    this.store.dispatch(
+      updateTransactionsSelectedDate({selectedDate: startDate})
+    );
+  }
+
+  getLastDayOfMonth(date: Date): number {
+    return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
   }
 }

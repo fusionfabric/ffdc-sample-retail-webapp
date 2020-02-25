@@ -96,7 +96,7 @@ app.get('/logout', (req, res) => {
 app.get('/api/user', auth.isAuthenticated, userController.getUser);
 app.use('/proxy', (req, res) => {
     proxy.web(req, res, {
-        target: 'https://api.fusionfabric.cloud/retail-us/me/account/v1'
+        target: `${config_1.FFDC_URL}/retail-us/me/account/v1`
     }, (err) => {
         logger_1.default.error(err.message);
         res.writeHead(500, {

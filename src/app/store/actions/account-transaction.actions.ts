@@ -28,3 +28,8 @@ export const getCheckedImageAccountTransaction = createAction(
   '[Account transaction] Retrieve Check Image for a Transaction',
   props<{ accountId: string, transactionId: string }>()
 );
+
+export const updateTransactionsSelectedDate = createAction(
+  '[Account transaction] Update selected date',
+  props<{ selectedDate: Date }>()
+);

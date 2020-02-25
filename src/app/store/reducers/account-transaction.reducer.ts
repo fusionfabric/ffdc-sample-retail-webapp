@@ -6,6 +6,7 @@ import { AccountTransactionApiActions, AccountTransactionActions } from '../acti
 
 export interface State extends EntityState<AccountTransaction> {
   searching: boolean;
+  selectedDate: Date;
 }
 
 export const adapter: EntityAdapter<AccountTransaction> = createEntityAdapter<AccountTransaction>({
@@ -13,7 +14,10 @@ export const adapter: EntityAdapter<AccountTransaction> = createEntityAdapter<Ac
   sortComparer: false
 });
 
-export const initialState: State = adapter.getInitialState({ searching: false });
+export const initialState: State = adapter.getInitialState({
+  searching: false,
+  selectedDate: new Date(1575154800000)
+});
 
 export const reducer = createReducer(
   initialState,
@@ -26,9 +30,12 @@ export const reducer = createReducer(
   ),
   on(AccountTransactionApiActions.searchAccountTransactionsSuccess, (state, { type, accountTransactions }) => {
     state.searching = false;
-    return adapter.upsertMany(accountTransactions, state);
+    return adapter.addAll(accountTransactions, state);
   }),
   on(AccountTransactionApiActions.searchAccountTransactionsFailure, (state, { type }) => {
     return { ...state, ...{ searching: false } };
+  }),
+  on(AccountTransactionActions.updateTransactionsSelectedDate, (state, {selectedDate}) => {
+    return {...state, ...{selectedDate}};
   })
 );

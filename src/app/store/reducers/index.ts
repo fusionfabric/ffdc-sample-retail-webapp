@@ -54,6 +54,11 @@ export const isSearchingAccountTransactions = createSelector(
   state => state.searching
 );
 
+export const selectTransactionsDate = createSelector(
+  selectAccountTransactionState,
+  state => state.selectedDate
+);
+
 export const selectAccountTransactionsWithAccountInfo = createSelector(
   selectAccountEntities,
   selectAllAccountTransactions,
