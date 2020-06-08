@@ -19,6 +19,8 @@ import { TokenInterceptor } from './services/token-interceptor.service';
 import { AppLayoutModule } from './components/app-layout/app-layout.module';
 import { HomePageModule } from './containers/home-page/home-page.module';
 import { MergedRouterStateSerializer } from './store/reducers/merged-route-serialzer';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -41,7 +43,8 @@ import { MergedRouterStateSerializer } from './store/reducers/merged-route-seria
       name: 'FFDC Sample App',
       // In a production build you would want to disable the Store Devtools
       // logOnly: environment.production,
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     {

@@ -1,0 +1,21 @@
+{
+    "name": "FFDC Sample Retail Banking Web App",
+    "description": "FFDC Sample Retail Banking Web App",
+    "repository": "https://github.com/fusionfabric/ffdc-sample-retail-webapp",
+    "env": {
+        "CLIENT_ID": {
+            "description": "Client ID"
+        },
+        "CLIENT_SECRET": {
+            "description": "Client Secret"
+        },
+        "HOST": {
+            "description": "URL of the deployed application",
+            "value": "https://REPLACE_WITH_APP_NAME.herokuapp.com"
+        },
+        "SESSION_SECRET": {
+            "description": "A secret key for verifying the integrity of session",
+            "generator": "secret"
+        }
+    }
+}

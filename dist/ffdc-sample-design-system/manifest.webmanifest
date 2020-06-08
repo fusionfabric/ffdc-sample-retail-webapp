@@ -1,0 +1,21 @@
+{
+  "name": "FFDC Sample Retail",
+  "short_name": "FFDC Sample Retail",
+  "theme_color": "#060546",
+  "background_color": "#1f1f22",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

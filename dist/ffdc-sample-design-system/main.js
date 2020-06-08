@@ -327,6 +327,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_app_layout_app_layout_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/app-layout/app-layout.module */ "./src/app/components/app-layout/app-layout.module.ts");
 /* harmony import */ var _containers_home_page_home_page_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./containers/home-page/home-page.module */ "./src/app/containers/home-page/home-page.module.ts");
 /* harmony import */ var _store_reducers_merged_route_serialzer__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./store/reducers/merged-route-serialzer */ "./src/app/store/reducers/merged-route-serialzer.ts");
+/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm2015/service-worker.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+
+
 
 
 
@@ -369,7 +373,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             }),
             _ngrx_store_devtools__WEBPACK_IMPORTED_MODULE_10__["StoreDevtoolsModule"].instrument({
                 name: 'FFDC Sample App',
-            })
+            }),
+            _angular_service_worker__WEBPACK_IMPORTED_MODULE_20__["ServiceWorkerModule"].register('ngsw-worker.js', { enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_21__["environment"].production })
         ],
         providers: [
             {
@@ -1426,7 +1431,7 @@ GlobalsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!***********************************!*\
   !*** ./src/app/services/index.ts ***!
   \***********************************/
-/*! exports provided: AccountApiService, AuthService, UserService, GlobalsService, AccountTransactionApiService */
+/*! exports provided: AuthService, AccountApiService, UserService, GlobalsService, AccountTransactionApiService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
