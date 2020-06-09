@@ -9,7 +9,7 @@
     "start": "node ./dist/server/server.js",
     "build:server": "tsc -p server/tsconfig.server.json",
     "build:server:watch": "tsc -p server/tsconfig.server.json -w",
-    "heroku-postbuild": "npm run build -- --prod && npm run build:server",
+    "heroku-postbuild": "echo 'nothing to do'",
     "start:server": "node dist/server/server.js",
     "start:server:debug": "nodemon --inspect dist/server/server.js",
     "test": "ng test",
