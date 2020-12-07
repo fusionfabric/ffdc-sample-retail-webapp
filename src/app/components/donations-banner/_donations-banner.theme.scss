@@ -1,0 +1,89 @@
+@mixin ffdc-donations-banner-theme($theme) {
+  $background: map-get($theme, background);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  $dp-navbar-height: 56px;
+  $dp-breadcrumbs-height: 50px;
+
+  $dp-live-banner-border-radius: 4px;
+
+  ffdc-donations-banner {
+    top: $dp-navbar-height + $uxg-spacing-3;
+    z-index: 100;
+    position: fixed;
+    left: $uxg-spacing-4;
+    width: calc(100% - #{$uxg-spacing-5});
+    &.has-breadcrumbs {
+      top: $dp-navbar-height + $uxg-spacing-3;
+    }
+
+    mat-toolbar {
+      border-radius: $dp-live-banner-border-radius;
+    }
+    .close-button {
+      background: none;
+      border: none;
+    }
+
+    .donations-banner-row {
+      @include mat-elevation(12, $mat-elevation-color, 0.6);
+      padding: $uxg-spacing-3 $uxg-spacing-4;
+      animation: fadeIn;
+      animation-duration: 1500ms;
+      white-space: pre-line;
+      background: mat-color($background, background);
+      border-left: 8px solid mat-color($accent, default);
+      border-right: 8px solid mat-color($accent, default);
+      border-radius: $dp-live-banner-border-radius;
+      overflow-y: auto;
+      height: auto;
+    }
+    #donations-icon {
+      font-size: 32px !important;
+      width: 32px !important;
+    }
+    .icon-wrapper {
+      background-color: #d648b226;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      margin-right: $uxg-spacing-2;
+    }
+
+    .text-div {
+      padding: $uxg-spacing-0 $uxg-spacing-4 $uxg-spacing-0 $uxg-spacing-2;
+      word-break: break-word;
+      max-width: 80%;
+    }
+
+    .title {
+      font: 700 18px/21px 'Futura EF', 'futura-pt', 'Futura', 'Hind', 'Verdana', 'Arial Black', sans-serif;
+      letter-spacing: normal;
+      line-height: inherit;
+      margin-right: 8px !important;
+    }
+    .announcement-paragraph {
+      font: 500 16px/21px Roboto, roboto, 'Helvetica Neue', sans-serif;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-top: 5px;
+
+    }
+    .dismiss-button {
+      margin-right: 8px;
+    }
+    @media all and (max-width: 959.9px) {
+      .donations-banner-row {
+        padding: $uxg-spacing-2 $uxg-spacing-3 $uxg-spacing-3;
+      }
+      .buttons-div {
+        width: 100%;
+      }
+      .text-div {
+        padding-bottom: $uxg-spacing-3;
+        max-width: 100%;
+      }
+    }
+  }
+}
