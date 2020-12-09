@@ -26,7 +26,7 @@
     "dotenv": "8.1.0",
     "errorhandler": "1.5.1",
     "express": "4.17.1",
-    "express-session": "1.16.2",
+    "express-session": "^1.16.2",
     "express-validator": "6.2.0",
     "http-proxy": "1.18.0",
     "lusca": "1.6.1",
