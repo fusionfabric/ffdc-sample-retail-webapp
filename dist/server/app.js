@@ -4,7 +4,7 @@ const tslib_1 = require("tslib");
 const express_1 = tslib_1.__importDefault(require("express"));
 const compression_1 = tslib_1.__importDefault(require("compression"));
 const body_parser_1 = tslib_1.__importDefault(require("body-parser"));
-const cookie_session_1 = tslib_1.__importDefault(require("cookie-session"));
+const express_session_1 = tslib_1.__importDefault(require("express-session"));
 const passport_1 = tslib_1.__importDefault(require("passport"));
 const path_1 = tslib_1.__importDefault(require("path"));
 const lusca_1 = tslib_1.__importDefault(require("lusca"));
@@ -52,12 +52,20 @@ app.set('view engine', 'pug');
 app.use(compression_1.default());
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: true }));
-app.use(cookie_session_1.default({
-    maxAge: 24 * 60 * 60 * 60 * 1000,
+// Un comment these code to activate  cookie session
+// app.use(
+//   cookieSession({
+//     maxAge: 24 * 60 * 60 * 60 * 1000,
+//     name: 'FFDC_SSID',
+//     secure: false,
+//     secret: SESSION_SECRET,
+//     httpOnly: true
+//   })
+// );
+// InMemory Session
+app.use(express_session_1.default({
     name: 'FFDC_SSID',
-    secure: false,
-    secret: config_1.SESSION_SECRET,
-    httpOnly: true
+    secret: config_1.SESSION_SECRET || ''
 }));
 auth.initialize(app).catch(ex => {
     logger_1.default.error(ex);

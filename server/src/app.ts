@@ -2,6 +2,8 @@ import express, { Request, Response } from 'express';
 import compression from 'compression';
 import bodyParser from 'body-parser';
 import cookieSession from 'cookie-session';
+import session from 'express-session';
+
 import passport from 'passport';
 import path from 'path';
 import lusca from 'lusca';
@@ -58,13 +60,23 @@ app.set('view engine', 'pug');
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Un comment these code to activate  cookie session
+// app.use(
+//   cookieSession({
+//     maxAge: 24 * 60 * 60 * 60 * 1000,
+//     name: 'FFDC_SSID',
+//     secure: false,
+//     secret: SESSION_SECRET,
+//     httpOnly: true
+//   })
+// );
+
+// InMemory Session
 app.use(
-  cookieSession({
-    maxAge: 24 * 60 * 60 * 60 * 1000,
+  session({
     name: 'FFDC_SSID',
-    secure: false,
-    secret: SESSION_SECRET,
-    httpOnly: true
+    secret: SESSION_SECRET || ''
   })
 );
 
@@ -108,18 +120,22 @@ app.get('/logout', (req, res) => {
   res.redirect('/login');
 });
 
-
 app.get('/api/user', auth.isAuthenticated, userController.getUser);
 app.use('/proxy', (req, res) => {
-  proxy.web(req, res, {
-    target: `${FFDC_URL}/retail-us/me/account/v1`
-  }, (err: any) => {
-    logger.error(err.message);
-    res.writeHead(500, {
-      'Content-Type': 'text/plain'
-    });
-    res.end('An error occurred while proxying the request');
-  });
+  proxy.web(
+    req,
+    res,
+    {
+      target: `${FFDC_URL}/retail-us/me/account/v1`
+    },
+    (err: any) => {
+      logger.error(err.message);
+      res.writeHead(500, {
+        'Content-Type': 'text/plain'
+      });
+      res.end('An error occurred while proxying the request');
+    }
+  );
 });
 
 const appFolder = path.join(__dirname, '../ffdc-sample-design-system');
