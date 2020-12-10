@@ -31,6 +31,16 @@ const routes: Routes = [
     data: {
       viewId: 'home'
     }
+  },
+  {
+    path: 'donations',
+    loadChildren: () => import('./containers/donations-page/donations-page.module').then(m => m.DonationsPageModule),
+    data: {
+      viewId: 'donations'
+    },
+    resolve: {
+      accounts: LoadAccountResolverService
+    }
   }
 ];
 

@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"default~containers-account-detail-page-account-detail-page-module~containers-account-page-account-pa~18b14be1":"default~containers-account-detail-page-account-detail-page-module~containers-account-page-account-pa~18b14be1","containers-account-detail-page-account-detail-page-module":"containers-account-detail-page-account-detail-page-module","containers-account-page-account-page-module":"containers-account-page-account-page-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"containers-account-detail-page-account-detail-page-module":"containers-account-detail-page-account-detail-page-module","containers-account-page-account-page-module":"containers-account-page-account-page-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

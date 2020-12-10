@@ -22478,6 +22478,7 @@ let AccountTransactionComponent = class AccountTransactionComponent {
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroyed$))
             .subscribe(accountTransactions => {
             this.accountTransactions = accountTransactions;
+            console.log(this.accountTransactions);
             this.cd.markForCheck();
         });
         this.searching$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["isSearchingAccountTransactions"]));
@@ -22576,77 +22577,6 @@ AccountTransactionModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         exports: [_account_transaction_component__WEBPACK_IMPORTED_MODULE_3__["AccountTransactionComponent"]]
     })
 ], AccountTransactionModule);
-
-
-
-/***/ }),
-
-/***/ "./src/app/services/account.service.ts":
-/*!*********************************************!*\
-  !*** ./src/app/services/account.service.ts ***!
-  \*********************************************/
-/*! exports provided: AccountService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountService", function() { return AccountService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let AccountService = class AccountService {
-    constructor() { }
-    getAccountOverview(account) {
-        const extendAccount = account;
-        const currentBalance = extendAccount.balances
-            ? extendAccount.balances.find(balence => balence.type === 'current')
-            : undefined;
-        const avaibleBalance = extendAccount.balances
-            ? extendAccount.balances.find(balence => balence.type === 'available')
-            : undefined;
-        const accountNumber = extendAccount.accountNumber ? extendAccount.accountNumber : '';
-        return {
-            nickname: account.nickname,
-            currentBalance: currentBalance ? currentBalance.amount : 0,
-            availableBalance: avaibleBalance ? avaibleBalance.amount : 0,
-            accountNumber
-        };
-    }
-    getAccountInterestPaid(account) {
-        const extendAccount = account;
-        const interestThisYear = extendAccount.details
-            ? extendAccount.details.find(detail => detail.label === 'Interest Paid Year to Date')
-            : undefined;
-        const interestLastYear = extendAccount.details
-            ? extendAccount.details.find(detail => detail.label === 'Interest Paid Last Year')
-            : undefined;
-        return {
-            interestThisYear: interestThisYear ? interestThisYear.value : '$0.00',
-            interestLastYear: interestLastYear ? interestLastYear.value : '$0.00'
-        };
-    }
-    getAllAcountOverview(accounts) {
-        let current = 0;
-        let available = 0;
-        for (const account of accounts) {
-            const extendAccount = account;
-            const currentBalance = extendAccount.balances
-                ? extendAccount.balances.find(balence => balence.type === 'current')
-                : undefined;
-            const avaibleBalance = extendAccount.balances
-                ? extendAccount.balances.find(balence => balence.type === 'available')
-                : undefined;
-            current += currentBalance ? currentBalance.amount : 0;
-            available += avaibleBalance ? avaibleBalance.amount : 0;
-        }
-        return { available, current };
-    }
-};
-AccountService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-], AccountService);
 
 
 

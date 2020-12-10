@@ -2,6 +2,7 @@ import { loadExtendedAccounts } from '../actions/account.actions';
 
 export interface AccountSummary {
   accountId: string;
+  banner: DonationsBanner;
   formattedAccountNumber: string;
   accountType: string;
   nickname: string;
@@ -112,3 +113,10 @@ export interface AllAccountsOverview {
   current: number;
 }
 
+export interface DonationsBanner {
+  id: number;
+  donationAmmount: number;
+  donationDestinatar: string;
+  donationTimestamp: number;
+  displayAt: number;
+}

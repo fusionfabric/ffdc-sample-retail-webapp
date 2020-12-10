@@ -1,0 +1,78 @@
+.donations-page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-bottom: 32px;
+    .donations-page-overview {
+      display: flex;
+      flex-grow: 100%;
+      margin-bottom: 32px;
+      padding: 32px 64px 32px 64px;
+      flex-direction: column;
+  
+      .account-page-acount-overview-info {
+        display: flex;
+        padding-top: 32px;
+        align-items: center;
+        .account-page-acount-overview-info-detail {
+          display: flex;
+          flex-direction: column;
+          padding-right: 64px;
+          .uxg-subtitle-2  {
+            padding-bottom: 8px;
+            margin-top: 16px;
+          }
+        }
+        .space {
+          flex: 1;
+        }
+        .account-page-acount-overview-info-action {
+          display: flex;
+          min-width: 196px;
+          justify-content: space-between;
+        }
+      }
+        .donate-button {
+            border-radius: 10px !important;
+            width: 10%;
+            height: 12vh;
+            margin-right: 8px;
+        }
+    }
+    .account-page-content {
+      padding-left: 64px;
+      padding-right: 64px;
+      display: flex;
+      flex-grow: 100%;
+      .account-page-content-column {
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+      }
+    }
+  
+    @media all and (max-width: 600px) {
+      .account-page-acount-overview {
+        padding: 16px 32px 16px 32px;
+  
+        .round-icon {
+          display: none;
+        }
+        .account-page-acount-overview-info {
+          padding-top: 8px;
+          flex-direction: column;
+          align-items: end;
+        }
+      }
+      .account-page-content {
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column;
+        .account-page-content-column {
+          flex: 1
+        }
+      }
+  
+    }
+  }
+  

@@ -23,6 +23,292 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-SG": "./node_modules/moment/locale/en-SG.js",
+	"./en-SG.js": "./node_modules/moment/locale/en-SG.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
 /*!**************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
@@ -31,6 +317,39 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /***/ (function(module, exports) {
 
 module.exports = "<ffdc-app-layout>\r\n  <ffdc-donations-banner></ffdc-donations-banner>\r\n  <ffdc-navbar-content [outlined]=\"(isHomePage$ | async)\">\r\n      <ffdc-navbar-home homeUrl=\".\" [dense]=\"!(isHomePage$ | async)\"></ffdc-navbar-home>\r\n      <ffdc-navbar-menu *ngIf=\"!(isHomePage$ | async)\" [navigationNodes]=\"navbarMenuData\"></ffdc-navbar-menu>\r\n      <ffdc-navbar-action-container>\r\n        <ffdc-navbar-action-item icon=\"search\" title=\"Search\">\r\n          <button mat-icon-button color=\"neutral\">\r\n            <mat-icon>search</mat-icon>\r\n          </button>\r\n        </ffdc-navbar-action-item>\r\n        <ffdc-navbar-action-item icon=\"notifications\" title=\"Notifications\">\r\n          <button mat-icon-button color=\"neutral\">\r\n            <mat-icon>notifications</mat-icon>\r\n          </button>\r\n        </ffdc-navbar-action-item>\r\n        <ffdc-navbar-action-item icon=\"help_outline\" title=\"Help\">\r\n          <button mat-icon-button color=\"neutral\">\r\n            <mat-icon>help_outline</mat-icon>\r\n          </button>\r\n        </ffdc-navbar-action-item>\r\n        <ffdc-navbar-action-item icon=\"apps\" title=\"Applications\">\r\n          <button mat-icon-button color=\"neutral\">\r\n            <mat-icon>apps</mat-icon>\r\n          </button>\r\n        </ffdc-navbar-action-item>\r\n        <ffdc-navbar-action-item icon=\"account_circle\" title=\"My account\">\r\n          <button mat-icon-button color=\"gradient\">\r\n            <mat-icon>account_circle</mat-icon>\r\n          </button>\r\n        </ffdc-navbar-action-item>\r\n      </ffdc-navbar-action-container>\r\n    <!-- </mat-toolbar> -->\r\n  </ffdc-navbar-content>\r\n  <ffdc-sidenav-content *ngIf=\"!(isHomePage$ | async)\">\r\n    <div class=\"uxg-nav-header\">\r\n      <mat-card class=\"uxg-card-product clickable\">\r\n        <span class=\"uxg-h3 uxg-card-product-name\">Ac</span>\r\n      </mat-card>\r\n    </div>\r\n    <mat-nav-list class=\"uxg-nav-list\">\r\n      <a mat-list-item routerLink = \"/\" class=\"uxg-list-item-selected\">\r\n        <mat-icon mat-list-icon>home</mat-icon>\r\n        <p>Home</p>\r\n      </a>\r\n      <a mat-list-item routerLink=\"/accounts\">\r\n        <mat-icon mat-list-icon>dashboard</mat-icon>\r\n        <p>Accounts</p>\r\n      </a>\r\n      <a mat-list-item>\r\n        <mat-icon mat-list-icon>notifications</mat-icon>\r\n        <p>Insights</p>\r\n      </a>\r\n      <a mat-list-item>\r\n        <mat-icon mat-list-icon>extension</mat-icon>\r\n        <p>RIB & Documents</p>\r\n      </a>\r\n      <a mat-list-item>\r\n        <mat-icon mat-list-icon>settings</mat-icon>\r\n        <p>Transfer</p>\r\n      </a>\r\n      <mat-divider></mat-divider>\r\n    </mat-nav-list>\r\n    <mat-nav-list class=\"uxg-link-list\">\r\n      <a mat-list-item>\r\n        <mat-icon mat-list-icon>help</mat-icon>\r\n        <p>Help</p>\r\n      </a>\r\n      <a mat-list-item href=\"/logout\">\r\n        <mat-icon  mat-list-icon>power_settings_new</mat-icon>\r\n        <p>Sign out</p>\r\n      </a>\r\n    </mat-nav-list>\r\n  </ffdc-sidenav-content>\r\n  <router-outlet></router-outlet>\r\n</ffdc-app-layout>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/components/account-card/account-card.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/components/account-card/account-card.component.html ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card class=\"account-card\">\r\n  <mat-card-content>\r\n    <div class=\"round-icon\">\r\n      <mat-icon aria-hidden=\"false\" aria-label=\"Account card\">credit_card</mat-icon>\r\n    </div>\r\n    <div>\r\n      <div class=\"uxg-body-1\">{{ accountOverview.nickname }}</div>\r\n      <div class=\"uxg-h5\">{{ accountOverview.currentBalance | currency }}</div>\r\n    </div>\r\n  </mat-card-content>\r\n  <mat-card-footer>\r\n    <mat-divider></mat-divider>\r\n    <div class=\"uxg-body-2 account-card-number-padding\">{{ accountOverview.accountNumber }}</div>\r\n  </mat-card-footer>\r\n</mat-card>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/components/account-list/account-list.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/components/account-list/account-list.component.html ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-container *ngFor=\"let account of accounts\">\r\n  <ffdc-account-card class=\"clickable\" (click)=\"onSelectedAccount(account)\" [account]=\"account\"></ffdc-account-card>\r\n</ng-container>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/components/account-transaction-list/account-transaction-list.component.html":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/components/account-transaction-list/account-transaction-list.component.html ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-list>\r\n  <ng-container *ngFor=\"let date of transactionDates\">\r\n    <div class=\"account-transaction-list-headline\">\r\n      <mat-icon>date_range</mat-icon>\r\n      &nbsp;&nbsp;{{ date }}\r\n    </div>\r\n    <mat-list-item *ngFor=\"let transaction of groupByAccountTransactions[date]\">\r\n      <div class=\"round-icon\" mat-list-icon>\r\n        <mat-icon>shopping_cart</mat-icon>\r\n      </div>\r\n\r\n      <div mat-line class=\"uxg-subtitle-1\">{{ transaction.account.description || 'No description' }}</div>\r\n      <div mat-line class=\"uxg-body-2\">{{ transaction.account.nickname }}</div>\r\n      {{ transaction.transactionAmount | currency }}\r\n    </mat-list-item>\r\n  </ng-container>\r\n</mat-list>\r\n"
 
 /***/ }),
 
@@ -118,7 +437,29 @@ module.exports = "<ng-template><ng-content></ng-content></ng-template>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar>\r\n  <mat-toolbar-row fxLayout fxLayout.lt-md=\"column\" class=\"donations-banner-row\">\r\n    <div fxHide.lt-md>\r\n      <div class=\"icon-wrapper\" fxLayoutAlign=\"center center\">\r\n        <mat-icon *ngIf=\"donationsBanner.content.icon\" id=\"donations-icon\" color=\"accent\" dense> {{donationsBanner.content.icon}}</mat-icon>\r\n      </div>\r\n    </div>\r\n    <div\r\n      class=\"text-div\"\r\n      fxLayoutAlign=\"center center\"\r\n      fxLayout.lt-md=\"column\"\r\n      fxLayoutAlign.lt-md=\"center start\"\r\n      fxLayoutFill\r\n    >\r\n      <span class=\"title mr-2\" *ngIf=\"donationsBanner.content.title\">{{ donationsBanner.content.title }}</span>\r\n\r\n      <div fxFlex class=\"announcement-paragraph\" [innerHTML]=\"donationsBanner.content.announcement\"></div>\r\n    </div>\r\n    <div fxFlex fxLayoutAlign=\"flex-start\" class=\"buttons-div\" fxLayoutAlign.lt-md=\"start center\">\r\n      <button mat-flat-button class=\"dismiss-button\" (click)=\"onDismiss()\" color=\"accent\">\r\n        {{ donationsBanner.content.dismissButtonText }}\r\n      </button>\r\n\r\n      <button mat-flat-button (click)=\"onAction()\" color=\"primary\">\r\n        {{ donationsBanner.content.actionButtonText }}\r\n      </button>\r\n    </div>\r\n\r\n    <div fxFlex fxHide.lt-md fxLayoutAlign=\"flex-end\">\r\n      <button  class=\"close-button\" (click)=\"onDismiss()\" mat-icon-button>\r\n        <mat-icon>close</mat-icon>\r\n      </button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n"
+module.exports = "<mat-toolbar *ngIf=\"donationsBanner.enabled\">\r\n  <mat-toolbar-row fxLayout fxLayout.lt-md=\"column\" class=\"donations-banner-row\">\r\n    <div fxHide.lt-md>\r\n      <div class=\"icon-wrapper\" fxLayoutAlign=\"center center\">\r\n        <mat-icon *ngIf=\"donationsBanner.content.icon\" id=\"donations-icon\" color=\"accent\" dense> {{donationsBanner.content.icon}}</mat-icon>\r\n      </div>\r\n    </div>\r\n    <div\r\n      class=\"text-div\"\r\n      fxLayoutAlign=\"center center\"\r\n      fxLayout.lt-md=\"column\"\r\n      fxLayoutAlign.lt-md=\"center start\"\r\n      fxLayoutFill\r\n    >\r\n      <span class=\"title mr-2\" *ngIf=\"donationsBanner.content.title\">{{ donationsBanner.content.title }}</span>\r\n\r\n      <div fxFlex class=\"announcement-paragraph\" [innerHTML]=\"donationsBanner.content.announcement\"></div>\r\n    </div>\r\n    <div fxFlex fxLayoutAlign=\"flex-start\" class=\"buttons-div\" fxLayoutAlign.lt-md=\"start center\">\r\n      <button mat-flat-button class=\"dismiss-button\" (click)=\"onDismiss()\" color=\"accent\">\r\n        {{ donationsBanner.content.dismissButtonText }}\r\n      </button>\r\n\r\n      <a mat-flat-button routerLink=\"/donations\" (click)=\"onAction()\" color=\"primary\">\r\n        {{ donationsBanner.content.actionButtonText }}\r\n      </a>\r\n    </div>\r\n\r\n    <div fxFlex fxHide.lt-md fxLayoutAlign=\"flex-end\">\r\n      <button  class=\"close-button\" (click)=\"onDismiss()\" mat-icon-button>\r\n        <mat-icon>close</mat-icon>\r\n      </button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/containers/account-transaction/account-transaction.component.html":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/containers/account-transaction/account-transaction.component.html ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card>\r\n  <div class=\"account-transaction-header\">\r\n    <div mat-card-title>Transactions - {{selectedDateLabel$ | async }}</div>\r\n    <div>\r\n      <mat-form-field>\r\n        <input matInput [matDatepicker]=\"picker\" [max]=\"maxDate\" style=\"display: none;\">\r\n        <mat-datepicker #picker \r\n          startView=\"year\"\r\n          (monthSelected)=\"chosenMonthHandler($event, picker)\"\r\n        ></mat-datepicker>\r\n      </mat-form-field>\r\n      <button mat-raised-button color=\"primary\" (click)=\"picker.open()\">Pick a month</button>\r\n    </div>\r\n  </div>\r\n  <mat-tab-group [selectedIndex]=\"selectedTabIndex\" (selectedIndexChange)=\"setSelectedTabIndex($event)\">\r\n    <mat-tab label=\"View All\">\r\n      <ng-container *ngIf=\"searching$ | async; else listAccountTransactions\">\r\n        <div class=\"account-transaction-spinner\">\r\n          <mat-spinner></mat-spinner>\r\n        </div>\r\n      </ng-container>\r\n    </mat-tab>\r\n    <mat-tab label=\"Incomes\">\r\n      <ng-container *ngIf=\"searching$ | async; else listAccountTransactions\">\r\n        <div class=\"account-transaction-spinner\">\r\n          <mat-spinner></mat-spinner>\r\n        </div>\r\n      </ng-container>\r\n    </mat-tab>\r\n    <mat-tab label=\"Expenses\">\r\n      <ng-container *ngIf=\"searching$ | async; else listAccountTransactions\">\r\n        <div class=\"account-transaction-spinner\">\r\n          <mat-spinner></mat-spinner>\r\n        </div>\r\n      </ng-container>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</mat-card>\r\n<ng-template #listAccountTransactions>\r\n  <ng-container *ngIf=\"accountTransactions?.length > 0\">\r\n    <ffdc-account-transaction-list [accountTransactions]=\"accountTransactions\"></ffdc-account-transaction-list>\r\n  </ng-container>\r\n  <ng-container *ngIf=\"accountTransactions?.length === 0\">\r\n    <div class=\"no-transactions\">\r\n      <mat-icon>sentiment_dissatisfied</mat-icon>\r\n      <p>No transactions</p>\r\n    </div>\r\n  </ng-container>\r\n</ng-template>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/containers/donations-page/donations-page.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/containers/donations-page/donations-page.component.html ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"donations-page-overview\">\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Your balance</div>\r\n  <div class=\"account-page-acount-overview-info\">\r\n    <div class=\"round-icon\">\r\n      <mat-icon aria-hidden=\"false\" aria-label=\"Account\">credit_card</mat-icon>\r\n    </div>\r\n    <div class=\"account-page-acount-overview-info-detail\">\r\n      <div class=\"uxg-subtitle-2\">Available Balance:</div>\r\n      <div class=\"uxg-h5\">{{ allAcountsOverview.available | currency }}</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an account</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <mat-select placeholder=\"--\">\r\n      <mat-option *ngFor=\"let account of accounts\" [value]=\"account.accountId\">\r\n        {{ account.nickname }}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an ammount</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <input type=\"number\" matInput placeholder=\"Ex. $10\" />\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">How often do you want to support this cause?</div>\r\n  <div fxLayout=\"row\">\r\n    <button mat-flat-button class=\"donate-button\" color=\"accent\">\r\n      Every 6 months\r\n    </button>\r\n    <button mat-flat-button class=\"donate-button\" color=\"accent\">\r\n      Every 12 months\r\n    </button>\r\n  </div>\r\n  <div>\r\n    <button mat-stroked-button color=\"accent\">\r\n      Cancel\r\n    </button>\r\n    <button mat-flat-button color=\"accent\">\r\n      Donate!\r\n    </button>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -175,7 +516,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: 'accounts',
-        loadChildren: () => Promise.all(/*! import() | containers-account-page-account-page-module */[__webpack_require__.e("default~containers-account-detail-page-account-detail-page-module~containers-account-page-account-pa~18b14be1"), __webpack_require__.e("containers-account-page-account-page-module")]).then(__webpack_require__.bind(null, /*! ./containers/account-page/account-page.module */ "./src/app/containers/account-page/account-page.module.ts")).then(m => m.AccountPageModule),
+        loadChildren: () => __webpack_require__.e(/*! import() | containers-account-page-account-page-module */ "containers-account-page-account-page-module").then(__webpack_require__.bind(null, /*! ./containers/account-page/account-page.module */ "./src/app/containers/account-page/account-page.module.ts")).then(m => m.AccountPageModule),
         data: {
             viewId: 'accounts'
         },
@@ -185,7 +526,7 @@ const routes = [
     },
     {
         path: 'accounts/:accountId',
-        loadChildren: () => Promise.all(/*! import() | containers-account-detail-page-account-detail-page-module */[__webpack_require__.e("default~containers-account-detail-page-account-detail-page-module~containers-account-page-account-pa~18b14be1"), __webpack_require__.e("containers-account-detail-page-account-detail-page-module")]).then(__webpack_require__.bind(null, /*! ./containers/account-detail-page/account-detail-page.module */ "./src/app/containers/account-detail-page/account-detail-page.module.ts")).then(m => m.AccountDetailPageModule),
+        loadChildren: () => __webpack_require__.e(/*! import() | containers-account-detail-page-account-detail-page-module */ "containers-account-detail-page-account-detail-page-module").then(__webpack_require__.bind(null, /*! ./containers/account-detail-page/account-detail-page.module */ "./src/app/containers/account-detail-page/account-detail-page.module.ts")).then(m => m.AccountDetailPageModule),
         data: {
             viewId: 'accountDetail'
         },
@@ -199,6 +540,16 @@ const routes = [
         component: _containers_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_3__["HomePageComponent"],
         data: {
             viewId: 'home'
+        }
+    },
+    {
+        path: 'donations',
+        loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./containers/donations-page/donations-page.module */ "./src/app/containers/donations-page/donations-page.module.ts")).then(m => m.DonationsPageModule),
+        data: {
+            viewId: 'donations'
+        },
+        resolve: {
+            accounts: _services_load_accounts_resolver_service__WEBPACK_IMPORTED_MODULE_4__["LoadAccountResolverService"]
         }
     }
 ];
@@ -257,7 +608,9 @@ let AppComponent = class AppComponent {
         this.navbarMenuData = [];
         this.isHomePage$ = store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectRouteData"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(data => (data ? data.viewId === 'home' : false)));
         Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["combineLatest"])(store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectAllAccounts"])), store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectRouteParams"])), store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectRouteData"]))).subscribe(([accounts, routeParams, routeData]) => {
+            console.log("routeParams", routeParams);
             if (routeData) {
+                console.log("RouteData", routeData);
                 if (routeData.viewId === 'accounts') {
                     this.navbarMenuData = [
                         {
@@ -341,6 +694,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm2015/service-worker.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var _components_donations_banner_donations_banner_module__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/donations-banner/donations-banner.module */ "./src/app/components/donations-banner/donations-banner.module.ts");
+/* harmony import */ var _containers_donations_page_donations_page_module__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./containers/donations-page/donations-page.module */ "./src/app/containers/donations-page/donations-page.module.ts");
+
 
 
 
@@ -378,6 +733,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
             _material_modules__WEBPACK_IMPORTED_MODULE_6__["MaterialModules"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
+            _containers_donations_page_donations_page_module__WEBPACK_IMPORTED_MODULE_23__["DonationsPageModule"],
             _ngrx_store__WEBPACK_IMPORTED_MODULE_7__["StoreModule"].forRoot(_store_reducers__WEBPACK_IMPORTED_MODULE_11__["ROOT_REDUCERS"]),
             _ngrx_effects__WEBPACK_IMPORTED_MODULE_8__["EffectsModule"].forRoot([_store_effects__WEBPACK_IMPORTED_MODULE_12__["AccountEffects"], _store_effects__WEBPACK_IMPORTED_MODULE_12__["AccountTransactionEffects"]]),
             _ngrx_router_store__WEBPACK_IMPORTED_MODULE_9__["StoreRouterConnectingModule"].forRoot({
@@ -407,6 +763,306 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-card/account-card.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/account-card/account-card.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".account-card mat-card {\n  width: 263px;\n  height: 96px;\n}\n.account-card mat-card mat-card-content {\n  display: flex;\n  justify-content: left;\n  align-items: center;\n}\n.account-card mat-card .account-card-number-padding {\n  padding: 4px 32px 8px 32px;\n}\n@media all and (max-width: 600px) {\n  .account-card mat-card {\n    width: 100%;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hY2NvdW50LWNhcmQvQzpcXFVzZXJzXFx1NzIyNjg2XFxGaW5hc3RyYVxcZmZkYy1zYW1wbGUtcmV0YWlsLXdlYmFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xcYWNjb3VudC1jYXJkXFxhY2NvdW50LWNhcmQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvYWNjb3VudC1jYXJkL2FjY291bnQtY2FyZC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLFlBQUE7RUFDQSxZQUFBO0FDQUo7QURDSTtFQUNFLGFBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0FDQ047QURDSTtFQUNFLDBCQUFBO0FDQ047QURFRTtFQUNFO0lBQ0UsV0FBQTtFQ0FKO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2FjY291bnQtY2FyZC9hY2NvdW50LWNhcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWNjb3VudC1jYXJkIHtcclxuICBtYXQtY2FyZCB7XHJcbiAgICB3aWR0aDogMjYzcHg7XHJcbiAgICBoZWlnaHQ6IDk2cHg7XHJcbiAgICBtYXQtY2FyZC1jb250ZW50IHtcclxuICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAganVzdGlmeS1jb250ZW50OiBsZWZ0O1xyXG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgLmFjY291bnQtY2FyZC1udW1iZXItcGFkZGluZyB7XHJcbiAgICAgIHBhZGRpbmc6IDRweCAzMnB4IDhweCAzMnB4O1xyXG4gICAgfVxyXG4gIH1cclxuICBAbWVkaWEgYWxsIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgbWF0LWNhcmQge1xyXG4gICAgICB3aWR0aDogMTAwJVxyXG4gICAgfVxyXG4gIH1cclxufVxyXG4iLCIuYWNjb3VudC1jYXJkIG1hdC1jYXJkIHtcbiAgd2lkdGg6IDI2M3B4O1xuICBoZWlnaHQ6IDk2cHg7XG59XG4uYWNjb3VudC1jYXJkIG1hdC1jYXJkIG1hdC1jYXJkLWNvbnRlbnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGxlZnQ7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYWNjb3VudC1jYXJkIG1hdC1jYXJkIC5hY2NvdW50LWNhcmQtbnVtYmVyLXBhZGRpbmcge1xuICBwYWRkaW5nOiA0cHggMzJweCA4cHggMzJweDtcbn1cbkBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG4gIC5hY2NvdW50LWNhcmQgbWF0LWNhcmQge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/account-card/account-card.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/account-card/account-card.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: AccountCardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountCardComponent", function() { return AccountCardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_account_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/account.service */ "./src/app/services/account.service.ts");
+
+
+
+let AccountCardComponent = class AccountCardComponent {
+    constructor(accountService) {
+        this.accountService = accountService;
+    }
+    ngOnInit() {
+        this.accountOverview = this.accountService.getAccountOverview(this.account);
+    }
+};
+AccountCardComponent.ctorParameters = () => [
+    { type: _services_account_service__WEBPACK_IMPORTED_MODULE_2__["AccountService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+], AccountCardComponent.prototype, "account", void 0);
+AccountCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'ffdc-account-card',
+        template: __webpack_require__(/*! raw-loader!./account-card.component.html */ "./node_modules/raw-loader/index.js!./src/app/components/account-card/account-card.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        host: {
+            class: 'account-card'
+        },
+        styles: [__webpack_require__(/*! ./account-card.component.scss */ "./src/app/components/account-card/account-card.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_account_service__WEBPACK_IMPORTED_MODULE_2__["AccountService"]])
+], AccountCardComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-card/account-card.module.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/components/account-card/account-card.module.ts ***!
+  \****************************************************************/
+/*! exports provided: AccountCardModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountCardModule", function() { return AccountCardModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _account_card_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./account-card.component */ "./src/app/components/account-card/account-card.component.ts");
+/* harmony import */ var _material_modules__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../material-modules */ "./src/app/material-modules.ts");
+
+
+
+
+
+let AccountCardModule = class AccountCardModule {
+};
+AccountCardModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_account_card_component__WEBPACK_IMPORTED_MODULE_3__["AccountCardComponent"]],
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _material_modules__WEBPACK_IMPORTED_MODULE_4__["MaterialModules"]
+        ],
+        exports: [_account_card_component__WEBPACK_IMPORTED_MODULE_3__["AccountCardComponent"]]
+    })
+], AccountCardModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-list/account-list.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/account-list/account-list.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".account-list {\n  display: flex;\n  flex-wrap: wrap;\n}\n.account-list > .account-card {\n  margin-right: 32px;\n  margin-top: 16px;\n  display: flex;\n  flex: 1;\n}\n@media all and (max-width: 600px) {\n  .account-list {\n    padding-bottom: 32px;\n  }\n  .account-list > .account-card {\n    margin-right: 0px;\n    margin-top: 16px;\n    display: flex;\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hY2NvdW50LWxpc3QvQzpcXFVzZXJzXFx1NzIyNjg2XFxGaW5hc3RyYVxcZmZkYy1zYW1wbGUtcmV0YWlsLXdlYmFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xcYWNjb3VudC1saXN0XFxhY2NvdW50LWxpc3QuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvYWNjb3VudC1saXN0L2FjY291bnQtbGlzdC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxlQUFBO0FDQ0Y7QURBRTtFQUNFLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0EsT0FBQTtBQ0VKO0FEQ0E7RUFDRTtJQUNFLG9CQUFBO0VDRUY7RURERTtJQUNFLGlCQUFBO0lBQ0EsZ0JBQUE7SUFDQSxhQUFBO0lBQ0EsT0FBQTtFQ0dKO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2FjY291bnQtbGlzdC9hY2NvdW50LWxpc3QuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWNjb3VudC1saXN0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICA+IC5hY2NvdW50LWNhcmQge1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAzMnB4O1xyXG4gICAgbWFyZ2luLXRvcDogMTZweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4OiAxO1xyXG4gIH1cclxufVxyXG5AbWVkaWEgYWxsIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gIC5hY2NvdW50LWxpc3Qge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDMycHg7XHJcbiAgICA+IC5hY2NvdW50LWNhcmQge1xyXG4gICAgICBtYXJnaW4tcmlnaHQ6IDBweDtcclxuICAgICAgbWFyZ2luLXRvcDogMTZweDtcclxuICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgZmxleDogMTtcclxuICAgIH1cclxuICB9XHJcbn1cclxuIiwiLmFjY291bnQtbGlzdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbn1cbi5hY2NvdW50LWxpc3QgPiAuYWNjb3VudC1jYXJkIHtcbiAgbWFyZ2luLXJpZ2h0OiAzMnB4O1xuICBtYXJnaW4tdG9wOiAxNnB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4OiAxO1xufVxuXG5AbWVkaWEgYWxsIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuICAuYWNjb3VudC1saXN0IHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMzJweDtcbiAgfVxuICAuYWNjb3VudC1saXN0ID4gLmFjY291bnQtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAwcHg7XG4gICAgbWFyZ2luLXRvcDogMTZweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXg6IDE7XG4gIH1cbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/account-list/account-list.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/account-list/account-list.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: AccountListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountListComponent", function() { return AccountListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+let AccountListComponent = class AccountListComponent {
+    constructor(router) {
+        this.router = router;
+        this.accounts = [];
+    }
+    ngOnInit() { }
+    onSelectedAccount(account) {
+        this.router.navigateByUrl(`/accounts/${account.accountId}`);
+    }
+};
+AccountListComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
+], AccountListComponent.prototype, "accounts", void 0);
+AccountListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'ffdc-account-list',
+        template: __webpack_require__(/*! raw-loader!./account-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/components/account-list/account-list.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        host: {
+            class: 'account-list'
+        },
+        styles: [__webpack_require__(/*! ./account-list.component.scss */ "./src/app/components/account-list/account-list.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+], AccountListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-list/account-list.module.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/components/account-list/account-list.module.ts ***!
+  \****************************************************************/
+/*! exports provided: AccountListModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountListModule", function() { return AccountListModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _account_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./account-list.component */ "./src/app/components/account-list/account-list.component.ts");
+/* harmony import */ var _account_card_account_card_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../account-card/account-card.module */ "./src/app/components/account-card/account-card.module.ts");
+
+
+
+
+
+let AccountListModule = class AccountListModule {
+    constructor() { }
+};
+AccountListModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_account_list_component__WEBPACK_IMPORTED_MODULE_3__["AccountListComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _account_card_account_card_module__WEBPACK_IMPORTED_MODULE_4__["AccountCardModule"]],
+        exports: [_account_list_component__WEBPACK_IMPORTED_MODULE_3__["AccountListComponent"]]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], AccountListModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-transaction-list/account-transaction-list.component.scss":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/account-transaction-list/account-transaction-list.component.scss ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".account-transaction-list mat-list {\n  max-height: 448px;\n}\n.account-transaction-list .account-transaction-list-headline {\n  padding: 8px;\n  display: flex;\n  align-items: center;\n}\n.account-transaction-list mat-list-item {\n  padding-left: 64px;\n}\n.account-transaction-list .uxg-subtitle-1 {\n  font-weight: 500 !important;\n}\n.account-transaction-list .uxg-body-2 {\n  font-weight: 300 !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hY2NvdW50LXRyYW5zYWN0aW9uLWxpc3QvQzpcXFVzZXJzXFx1NzIyNjg2XFxGaW5hc3RyYVxcZmZkYy1zYW1wbGUtcmV0YWlsLXdlYmFwcC9zcmNcXGFwcFxcY29tcG9uZW50c1xcYWNjb3VudC10cmFuc2FjdGlvbi1saXN0XFxhY2NvdW50LXRyYW5zYWN0aW9uLWxpc3QuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvYWNjb3VudC10cmFuc2FjdGlvbi1saXN0L2FjY291bnQtdHJhbnNhY3Rpb24tbGlzdC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLGlCQUFBO0FDQUo7QURFRTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7QUNBSjtBREVFO0VBQ0Usa0JBQUE7QUNBSjtBREVFO0VBQ0UsMkJBQUE7QUNBSjtBREVFO0VBQ0UsMkJBQUE7QUNBSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWNjb3VudC10cmFuc2FjdGlvbi1saXN0L2FjY291bnQtdHJhbnNhY3Rpb24tbGlzdC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hY2NvdW50LXRyYW5zYWN0aW9uLWxpc3Qge1xyXG4gIG1hdC1saXN0IHtcclxuICAgIG1heC1oZWlnaHQ6IDQ0OHB4O1xyXG4gIH1cclxuICAuYWNjb3VudC10cmFuc2FjdGlvbi1saXN0LWhlYWRsaW5lIHtcclxuICAgIHBhZGRpbmc6IDhweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIH1cclxuICBtYXQtbGlzdC1pdGVtIHtcclxuICAgIHBhZGRpbmctbGVmdDogNjRweDtcclxuICB9XHJcbiAgLnV4Zy1zdWJ0aXRsZS0xIHtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDAhaW1wb3J0YW50O1xyXG4gIH1cclxuICAudXhnLWJvZHktMiB7XHJcbiAgICBmb250LXdlaWdodDogMzAwIWltcG9ydGFudDtcclxuICB9XHJcbn1cclxuIiwiLmFjY291bnQtdHJhbnNhY3Rpb24tbGlzdCBtYXQtbGlzdCB7XG4gIG1heC1oZWlnaHQ6IDQ0OHB4O1xufVxuLmFjY291bnQtdHJhbnNhY3Rpb24tbGlzdCAuYWNjb3VudC10cmFuc2FjdGlvbi1saXN0LWhlYWRsaW5lIHtcbiAgcGFkZGluZzogOHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmFjY291bnQtdHJhbnNhY3Rpb24tbGlzdCBtYXQtbGlzdC1pdGVtIHtcbiAgcGFkZGluZy1sZWZ0OiA2NHB4O1xufVxuLmFjY291bnQtdHJhbnNhY3Rpb24tbGlzdCAudXhnLXN1YnRpdGxlLTEge1xuICBmb250LXdlaWdodDogNTAwICFpbXBvcnRhbnQ7XG59XG4uYWNjb3VudC10cmFuc2FjdGlvbi1saXN0IC51eGctYm9keS0yIHtcbiAgZm9udC13ZWlnaHQ6IDMwMCAhaW1wb3J0YW50O1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/account-transaction-list/account-transaction-list.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/account-transaction-list/account-transaction-list.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: AccountTransactionListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountTransactionListComponent", function() { return AccountTransactionListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var lodash_groupBy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/groupBy */ "./node_modules/lodash/groupBy.js");
+/* harmony import */ var lodash_groupBy__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_groupBy__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils */ "./src/app/utils.ts");
+
+
+
+
+let AccountTransactionListComponent = class AccountTransactionListComponent {
+    constructor() {
+        this.transactionDates = [];
+    }
+    get accountTransactions() {
+        return this._accountTransactions;
+    }
+    set accountTransactions(value) {
+        this._accountTransactions = value;
+        this.groupByAccountTransactions = lodash_groupBy__WEBPACK_IMPORTED_MODULE_2___default()(value, 'transactionDate');
+        this.transactionDates = Object.keys(this.groupByAccountTransactions).sort(_utils__WEBPACK_IMPORTED_MODULE_3__["compareDate"]);
+    }
+    ngOnInit() {
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Array])
+], AccountTransactionListComponent.prototype, "accountTransactions", null);
+AccountTransactionListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'ffdc-account-transaction-list',
+        template: __webpack_require__(/*! raw-loader!./account-transaction-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/components/account-transaction-list/account-transaction-list.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        host: {
+            class: 'account-transaction-list'
+        },
+        styles: [__webpack_require__(/*! ./account-transaction-list.component.scss */ "./src/app/components/account-transaction-list/account-transaction-list.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], AccountTransactionListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/account-transaction-list/account-transaction-list.module.ts":
+/*!****************************************************************************************!*\
+  !*** ./src/app/components/account-transaction-list/account-transaction-list.module.ts ***!
+  \****************************************************************************************/
+/*! exports provided: AccountTransactionListModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountTransactionListModule", function() { return AccountTransactionListModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _account_transaction_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./account-transaction-list.component */ "./src/app/components/account-transaction-list/account-transaction-list.component.ts");
+/* harmony import */ var _material_modules__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../material-modules */ "./src/app/material-modules.ts");
+
+
+
+
+
+let AccountTransactionListModule = class AccountTransactionListModule {
+};
+AccountTransactionListModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_account_transaction_list_component__WEBPACK_IMPORTED_MODULE_3__["AccountTransactionListComponent"]],
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _material_modules__WEBPACK_IMPORTED_MODULE_4__["MaterialModules"]
+        ],
+        exports: [_account_transaction_list_component__WEBPACK_IMPORTED_MODULE_3__["AccountTransactionListComponent"]]
+    })
+], AccountTransactionListModule);
 
 
 
@@ -1009,23 +1665,19 @@ let DonationsBannerComponent = class DonationsBannerComponent {
             }
         };
         this.action = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.dismiss = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
     }
     onAction() {
+        this.onDismiss();
         this.action.emit();
     }
     onDismiss() {
-        this.dismiss.emit();
+        this.donationsBanner.enabled = false;
     }
 };
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
 ], DonationsBannerComponent.prototype, "action", void 0);
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-], DonationsBannerComponent.prototype, "dismiss", void 0);
 DonationsBannerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'ffdc-donations-banner',
@@ -1056,6 +1708,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
 /* harmony import */ var _material_modules__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../material-modules */ "./src/app/material-modules.ts");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm2015/flex-layout.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
@@ -1068,11 +1722,341 @@ let BannerModule = class BannerModule {
 };
 BannerModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_7__["FlexLayoutModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIconModule"], _material_modules__WEBPACK_IMPORTED_MODULE_6__["MaterialModules"]],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_7__["FlexLayoutModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIconModule"], _material_modules__WEBPACK_IMPORTED_MODULE_6__["MaterialModules"]],
         exports: [_donations_banner_component__WEBPACK_IMPORTED_MODULE_3__["DonationsBannerComponent"]],
         declarations: [_donations_banner_component__WEBPACK_IMPORTED_MODULE_3__["DonationsBannerComponent"]]
     })
 ], BannerModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/containers/account-transaction/account-transaction.component.scss":
+/*!***********************************************************************************!*\
+  !*** ./src/app/containers/account-transaction/account-transaction.component.scss ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".account-transaction {\n  display: flex;\n  flex-direction: column;\n}\n.account-transaction .account-transaction-header {\n  display: flex;\n  justify-content: space-between;\n  flex: 1;\n  padding-bottom: 16px;\n}\n.account-transaction .account-transaction-header .mat-form-field-underline {\n  display: none;\n}\n.account-transaction .account-transaction-spinner {\n  display: flex;\n  justify-content: center;\n  padding: 32px 0px;\n}\n.account-transaction .no-transactions {\n  text-align: center;\n}\n.account-transaction .no-transactions mat-icon {\n  -webkit-transform: scale(5);\n          transform: scale(5);\n  margin: 70px 0 40px;\n}\n@media all and (max-width: 600px) {\n  .account-transaction #searchBtn {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFpbmVycy9hY2NvdW50LXRyYW5zYWN0aW9uL0M6XFxVc2Vyc1xcdTcyMjY4NlxcRmluYXN0cmFcXGZmZGMtc2FtcGxlLXJldGFpbC13ZWJhcHAvc3JjXFxhcHBcXGNvbnRhaW5lcnNcXGFjY291bnQtdHJhbnNhY3Rpb25cXGFjY291bnQtdHJhbnNhY3Rpb24uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbnRhaW5lcnMvYWNjb3VudC10cmFuc2FjdGlvbi9hY2NvdW50LXRyYW5zYWN0aW9uLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0FDQ0Y7QURBRTtFQUNFLGFBQUE7RUFDQSw4QkFBQTtFQUNBLE9BQUE7RUFDQSxvQkFBQTtBQ0VKO0FEQUk7RUFDRSxhQUFBO0FDRU47QURDRTtFQUNFLGFBQUE7RUFDQSx1QkFBQTtFQUNBLGlCQUFBO0FDQ0o7QURFRTtFQUNFLGtCQUFBO0FDQUo7QURFSTtFQUNFLDJCQUFBO1VBQUEsbUJBQUE7RUFDQSxtQkFBQTtBQ0FOO0FES0U7RUFDRTtJQUNFLGFBQUE7RUNISjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29udGFpbmVycy9hY2NvdW50LXRyYW5zYWN0aW9uL2FjY291bnQtdHJhbnNhY3Rpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWNjb3VudC10cmFuc2FjdGlvbiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIC5hY2NvdW50LXRyYW5zYWN0aW9uLWhlYWRlciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgZmxleDogMTtcclxuICAgIHBhZGRpbmctYm90dG9tOiAxNnB4O1xyXG5cclxuICAgIC5tYXQtZm9ybS1maWVsZC11bmRlcmxpbmUge1xyXG4gICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gIH1cclxuICAuYWNjb3VudC10cmFuc2FjdGlvbi1zcGlubmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDMycHggMHB4O1xyXG4gIH1cclxuXHJcbiAgLm5vLXRyYW5zYWN0aW9ucyB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblxyXG4gICAgbWF0LWljb24ge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlKDUpO1xyXG4gICAgICBtYXJnaW46IDcwcHggMCA0MHB4O1xyXG4gICAgfVxyXG4gIH1cclxuXHJcblxyXG4gIEBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgICAjc2VhcmNoQnRuIHtcclxuICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxuICB9XHJcbn1cclxuIiwiLmFjY291bnQtdHJhbnNhY3Rpb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLmFjY291bnQtdHJhbnNhY3Rpb24gLmFjY291bnQtdHJhbnNhY3Rpb24taGVhZGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBmbGV4OiAxO1xuICBwYWRkaW5nLWJvdHRvbTogMTZweDtcbn1cbi5hY2NvdW50LXRyYW5zYWN0aW9uIC5hY2NvdW50LXRyYW5zYWN0aW9uLWhlYWRlciAubWF0LWZvcm0tZmllbGQtdW5kZXJsaW5lIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5hY2NvdW50LXRyYW5zYWN0aW9uIC5hY2NvdW50LXRyYW5zYWN0aW9uLXNwaW5uZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMzJweCAwcHg7XG59XG4uYWNjb3VudC10cmFuc2FjdGlvbiAubm8tdHJhbnNhY3Rpb25zIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmFjY291bnQtdHJhbnNhY3Rpb24gLm5vLXRyYW5zYWN0aW9ucyBtYXQtaWNvbiB7XG4gIHRyYW5zZm9ybTogc2NhbGUoNSk7XG4gIG1hcmdpbjogNzBweCAwIDQwcHg7XG59XG5AbWVkaWEgYWxsIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuICAuYWNjb3VudC10cmFuc2FjdGlvbiAjc2VhcmNoQnRuIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/containers/account-transaction/account-transaction.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/containers/account-transaction/account-transaction.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: AccountTransactionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountTransactionComponent", function() { return AccountTransactionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm2015/store.js");
+/* harmony import */ var _store_reducers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/reducers */ "./src/app/store/reducers/index.ts");
+/* harmony import */ var _store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../store/actions/account-transaction.actions */ "./src/app/store/actions/account-transaction.actions.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utils */ "./src/app/utils.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+
+
+
+
+let AccountTransactionComponent = class AccountTransactionComponent {
+    constructor(store, cd) {
+        this.store = store;
+        this.cd = cd;
+        this.showAllAccount = false;
+        this.accountTransactions = [];
+        this.selectedDateLabel$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["ReplaySubject"](1);
+        this.selectedTabIndex = 0;
+        this.selectedTabIndex$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["BehaviorSubject"](0);
+        this.accountId$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["ReplaySubject"](1);
+        this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+        this.maxDate = new Date();
+    }
+    get accountId() {
+        return this._accountId;
+    }
+    set accountId(value) {
+        this._accountId = value;
+        if (value) {
+            this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectTransactionsDate"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["take"])(1)).subscribe(selectedDate => {
+                this.store.dispatch(Object(_store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__["searchAccountTransactions"])({ accountId: value, filter: { startDate: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["dateFormat"])(selectedDate) } }));
+            });
+            this.accountId$.next(value);
+        }
+    }
+    ngOnInit() {
+        this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectTransactionsDate"])).subscribe(selectedDate => {
+            this.selectedDate = selectedDate;
+            const dateLabel = Object(_utils__WEBPACK_IMPORTED_MODULE_6__["dateFormat"])(selectedDate, 'MMMM YYYY');
+            this.selectedDateLabel$.next(dateLabel);
+        });
+        if (this.showAllAccount) {
+            this.store.dispatch(Object(_store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__["searchAllAccountTransactions"])({ filter: { startDate: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["dateFormat"])(this.selectedDate) } }));
+        }
+        const getAllOrSingleAccountTransaction = Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["iif"])(() => this.showAllAccount, this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectAccountTransactionsWithAccountInfo"])), this.accountId$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["switchMap"])(accountId => this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectAccountTransactionsWithAccountInfoForAccount"], { accountId })))));
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["combineLatest"])(this.selectedTabIndex$, getAllOrSingleAccountTransaction)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(([index, accountTransactions]) => {
+            if (index === 1) {
+                return accountTransactions.filter(transaction => transaction.transactionAmount > 0);
+            }
+            else if (index === 2) {
+                return accountTransactions.filter(transaction => transaction.transactionAmount < 0);
+            }
+            return accountTransactions;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroyed$))
+            .subscribe(accountTransactions => {
+            this.accountTransactions = accountTransactions;
+            console.log(this.accountTransactions);
+            this.cd.markForCheck();
+        });
+        this.searching$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["isSearchingAccountTransactions"]));
+    }
+    ngOnDestroy() {
+        this.destroyed$.next();
+        this.destroyed$.complete();
+    }
+    setSelectedTabIndex(index) {
+        this.selectedTabIndex = index;
+        this.selectedTabIndex$.next(index);
+    }
+    chosenMonthHandler(selectedDate, datepicker) {
+        datepicker.close();
+        const startDate = new Date(selectedDate.setDate(1));
+        const endDate = new Date(selectedDate.setDate(this.getLastDayOfMonth(selectedDate)));
+        const filter = {
+            startDate: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["dateFormat"])(startDate),
+            endDate: Object(_utils__WEBPACK_IMPORTED_MODULE_6__["dateFormat"])(endDate)
+        };
+        if (this.showAllAccount) {
+            this.store.dispatch(Object(_store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__["searchAllAccountTransactions"])({ filter }));
+        }
+        else {
+            this.store.dispatch(Object(_store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__["searchAccountTransactions"])({ accountId: this.accountId, filter }));
+        }
+        this.store.dispatch(Object(_store_actions_account_transaction_actions__WEBPACK_IMPORTED_MODULE_4__["updateTransactionsSelectedDate"])({ selectedDate: startDate }));
+    }
+    getLastDayOfMonth(date) {
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+    }
+};
+AccountTransactionComponent.ctorParameters = () => [
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [Object])
+], AccountTransactionComponent.prototype, "accountId", null);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+], AccountTransactionComponent.prototype, "showAllAccount", void 0);
+AccountTransactionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'ffdc-account-transaction',
+        template: __webpack_require__(/*! raw-loader!./account-transaction.component.html */ "./node_modules/raw-loader/index.js!./src/app/containers/account-transaction/account-transaction.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        host: {
+            class: 'account-transaction'
+        },
+        styles: [__webpack_require__(/*! ./account-transaction.component.scss */ "./src/app/containers/account-transaction/account-transaction.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]])
+], AccountTransactionComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/containers/account-transaction/account-transaction.module.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/containers/account-transaction/account-transaction.module.ts ***!
+  \******************************************************************************/
+/*! exports provided: AccountTransactionModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountTransactionModule", function() { return AccountTransactionModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _account_transaction_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./account-transaction.component */ "./src/app/containers/account-transaction/account-transaction.component.ts");
+/* harmony import */ var _material_modules__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../material-modules */ "./src/app/material-modules.ts");
+/* harmony import */ var _components_account_transaction_list_account_transaction_list_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/account-transaction-list/account-transaction-list.module */ "./src/app/components/account-transaction-list/account-transaction-list.module.ts");
+
+
+
+
+
+
+let AccountTransactionModule = class AccountTransactionModule {
+};
+AccountTransactionModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_account_transaction_component__WEBPACK_IMPORTED_MODULE_3__["AccountTransactionComponent"]],
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _material_modules__WEBPACK_IMPORTED_MODULE_4__["MaterialModules"],
+            _components_account_transaction_list_account_transaction_list_module__WEBPACK_IMPORTED_MODULE_5__["AccountTransactionListModule"]
+        ],
+        exports: [_account_transaction_component__WEBPACK_IMPORTED_MODULE_3__["AccountTransactionComponent"]]
+    })
+], AccountTransactionModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/containers/donations-page/donations-page.component.scss":
+/*!*************************************************************************!*\
+  !*** ./src/app/containers/donations-page/donations-page.component.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".donations-page {\n  display: flex;\n  flex: 1;\n  flex-direction: column;\n  padding-bottom: 32px;\n}\n.donations-page .donations-page-overview {\n  display: flex;\n  flex-grow: 100%;\n  margin-bottom: 32px;\n  padding: 32px 64px 32px 64px;\n  flex-direction: column;\n}\n.donations-page .donations-page-overview .account-page-acount-overview-info {\n  display: flex;\n  padding-top: 32px;\n  align-items: center;\n}\n.donations-page .donations-page-overview .account-page-acount-overview-info .account-page-acount-overview-info-detail {\n  display: flex;\n  flex-direction: column;\n  padding-right: 64px;\n}\n.donations-page .donations-page-overview .account-page-acount-overview-info .account-page-acount-overview-info-detail .uxg-subtitle-2 {\n  padding-bottom: 8px;\n  margin-top: 16px;\n}\n.donations-page .donations-page-overview .account-page-acount-overview-info .space {\n  flex: 1;\n}\n.donations-page .donations-page-overview .account-page-acount-overview-info .account-page-acount-overview-info-action {\n  display: flex;\n  min-width: 196px;\n  justify-content: space-between;\n}\n.donations-page .donations-page-overview .donate-button {\n  border-radius: 10px !important;\n  width: 10%;\n  height: 12vh;\n  margin-right: 8px;\n}\n.donations-page .account-page-content {\n  padding-left: 64px;\n  padding-right: 64px;\n  display: flex;\n  flex-grow: 100%;\n}\n.donations-page .account-page-content .account-page-content-column {\n  display: flex;\n  flex-direction: column;\n  flex: 50%;\n}\n@media all and (max-width: 600px) {\n  .donations-page .account-page-acount-overview {\n    padding: 16px 32px 16px 32px;\n  }\n  .donations-page .account-page-acount-overview .round-icon {\n    display: none;\n  }\n  .donations-page .account-page-acount-overview .account-page-acount-overview-info {\n    padding-top: 8px;\n    flex-direction: column;\n    align-items: end;\n  }\n  .donations-page .account-page-content {\n    padding-left: 16px;\n    padding-right: 16px;\n    flex-direction: column;\n  }\n  .donations-page .account-page-content .account-page-content-column {\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFpbmVycy9kb25hdGlvbnMtcGFnZS9DOlxcVXNlcnNcXHU3MjI2ODZcXEZpbmFzdHJhXFxmZmRjLXNhbXBsZS1yZXRhaWwtd2ViYXBwL3NyY1xcYXBwXFxjb250YWluZXJzXFxkb25hdGlvbnMtcGFnZVxcZG9uYXRpb25zLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbnRhaW5lcnMvZG9uYXRpb25zLXBhZ2UvZG9uYXRpb25zLXBhZ2UuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFBO0VBQ0EsT0FBQTtFQUNBLHNCQUFBO0VBQ0Esb0JBQUE7QUNDSjtBREFJO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtFQUNBLDRCQUFBO0VBQ0Esc0JBQUE7QUNFTjtBREFNO0VBQ0UsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7QUNFUjtBRERRO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7QUNHVjtBREZVO0VBQ0UsbUJBQUE7RUFDQSxnQkFBQTtBQ0laO0FERFE7RUFDRSxPQUFBO0FDR1Y7QUREUTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLDhCQUFBO0FDR1Y7QURBUTtFQUNJLDhCQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQ0VaO0FEQ0k7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7QUNDTjtBREFNO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsU0FBQTtBQ0VSO0FERUk7RUFDRTtJQUNFLDRCQUFBO0VDQU47RURFTTtJQUNFLGFBQUE7RUNBUjtFREVNO0lBQ0UsZ0JBQUE7SUFDQSxzQkFBQTtJQUNBLGdCQUFBO0VDQVI7RURHSTtJQUNFLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxzQkFBQTtFQ0ROO0VERU07SUFDRSxPQUFBO0VDQVI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhaW5lcnMvZG9uYXRpb25zLXBhZ2UvZG9uYXRpb25zLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZG9uYXRpb25zLXBhZ2Uge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXg6IDE7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgcGFkZGluZy1ib3R0b206IDMycHg7XHJcbiAgICAuZG9uYXRpb25zLXBhZ2Utb3ZlcnZpZXcge1xyXG4gICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICBmbGV4LWdyb3c6IDEwMCU7XHJcbiAgICAgIG1hcmdpbi1ib3R0b206IDMycHg7XHJcbiAgICAgIHBhZGRpbmc6IDMycHggNjRweCAzMnB4IDY0cHg7XHJcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgXHJcbiAgICAgIC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8ge1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgcGFkZGluZy10b3A6IDMycHg7XHJcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgICAgICAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldy1pbmZvLWRldGFpbCB7XHJcbiAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICAgIHBhZGRpbmctcmlnaHQ6IDY0cHg7XHJcbiAgICAgICAgICAudXhnLXN1YnRpdGxlLTIgIHtcclxuICAgICAgICAgICAgcGFkZGluZy1ib3R0b206IDhweDtcclxuICAgICAgICAgICAgbWFyZ2luLXRvcDogMTZweDtcclxuICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgICAgLnNwYWNlIHtcclxuICAgICAgICAgIGZsZXg6IDE7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8tYWN0aW9uIHtcclxuICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgICBtaW4td2lkdGg6IDE5NnB4O1xyXG4gICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgICAgIH1cclxuICAgICAgfVxyXG4gICAgICAgIC5kb25hdGUtYnV0dG9uIHtcclxuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweCAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICB3aWR0aDogMTAlO1xyXG4gICAgICAgICAgICBoZWlnaHQ6IDEydmg7XHJcbiAgICAgICAgICAgIG1hcmdpbi1yaWdodDogOHB4O1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIC5hY2NvdW50LXBhZ2UtY29udGVudCB7XHJcbiAgICAgIHBhZGRpbmctbGVmdDogNjRweDtcclxuICAgICAgcGFkZGluZy1yaWdodDogNjRweDtcclxuICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgZmxleC1ncm93OiAxMDAlO1xyXG4gICAgICAuYWNjb3VudC1wYWdlLWNvbnRlbnQtY29sdW1uIHtcclxuICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICAgICAgZmxleDogNTAlO1xyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgXHJcbiAgICBAbWVkaWEgYWxsIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgICAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldyB7XHJcbiAgICAgICAgcGFkZGluZzogMTZweCAzMnB4IDE2cHggMzJweDtcclxuICBcclxuICAgICAgICAucm91bmQtaWNvbiB7XHJcbiAgICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgICAgIH1cclxuICAgICAgICAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldy1pbmZvIHtcclxuICAgICAgICAgIHBhZGRpbmctdG9wOiA4cHg7XHJcbiAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgICAgICAgYWxpZ24taXRlbXM6IGVuZDtcclxuICAgICAgICB9XHJcbiAgICAgIH1cclxuICAgICAgLmFjY291bnQtcGFnZS1jb250ZW50IHtcclxuICAgICAgICBwYWRkaW5nLWxlZnQ6IDE2cHg7XHJcbiAgICAgICAgcGFkZGluZy1yaWdodDogMTZweDtcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgICAgIC5hY2NvdW50LXBhZ2UtY29udGVudC1jb2x1bW4ge1xyXG4gICAgICAgICAgZmxleDogMVxyXG4gICAgICAgIH1cclxuICAgICAgfVxyXG4gIFxyXG4gICAgfVxyXG4gIH1cclxuICAiLCIuZG9uYXRpb25zLXBhZ2Uge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4OiAxO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBwYWRkaW5nLWJvdHRvbTogMzJweDtcbn1cbi5kb25hdGlvbnMtcGFnZSAuZG9uYXRpb25zLXBhZ2Utb3ZlcnZpZXcge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWdyb3c6IDEwMCU7XG4gIG1hcmdpbi1ib3R0b206IDMycHg7XG4gIHBhZGRpbmc6IDMycHggNjRweCAzMnB4IDY0cHg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4uZG9uYXRpb25zLXBhZ2UgLmRvbmF0aW9ucy1wYWdlLW92ZXJ2aWV3IC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBwYWRkaW5nLXRvcDogMzJweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5kb25hdGlvbnMtcGFnZSAuZG9uYXRpb25zLXBhZ2Utb3ZlcnZpZXcgLmFjY291bnQtcGFnZS1hY291bnQtb3ZlcnZpZXctaW5mbyAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldy1pbmZvLWRldGFpbCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIHBhZGRpbmctcmlnaHQ6IDY0cHg7XG59XG4uZG9uYXRpb25zLXBhZ2UgLmRvbmF0aW9ucy1wYWdlLW92ZXJ2aWV3IC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8gLmFjY291bnQtcGFnZS1hY291bnQtb3ZlcnZpZXctaW5mby1kZXRhaWwgLnV4Zy1zdWJ0aXRsZS0yIHtcbiAgcGFkZGluZy1ib3R0b206IDhweDtcbiAgbWFyZ2luLXRvcDogMTZweDtcbn1cbi5kb25hdGlvbnMtcGFnZSAuZG9uYXRpb25zLXBhZ2Utb3ZlcnZpZXcgLmFjY291bnQtcGFnZS1hY291bnQtb3ZlcnZpZXctaW5mbyAuc3BhY2Uge1xuICBmbGV4OiAxO1xufVxuLmRvbmF0aW9ucy1wYWdlIC5kb25hdGlvbnMtcGFnZS1vdmVydmlldyAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldy1pbmZvIC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8tYWN0aW9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgbWluLXdpZHRoOiAxOTZweDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuLmRvbmF0aW9ucy1wYWdlIC5kb25hdGlvbnMtcGFnZS1vdmVydmlldyAuZG9uYXRlLWJ1dHRvbiB7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHggIWltcG9ydGFudDtcbiAgd2lkdGg6IDEwJTtcbiAgaGVpZ2h0OiAxMnZoO1xuICBtYXJnaW4tcmlnaHQ6IDhweDtcbn1cbi5kb25hdGlvbnMtcGFnZSAuYWNjb3VudC1wYWdlLWNvbnRlbnQge1xuICBwYWRkaW5nLWxlZnQ6IDY0cHg7XG4gIHBhZGRpbmctcmlnaHQ6IDY0cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZ3JvdzogMTAwJTtcbn1cbi5kb25hdGlvbnMtcGFnZSAuYWNjb3VudC1wYWdlLWNvbnRlbnQgLmFjY291bnQtcGFnZS1jb250ZW50LWNvbHVtbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZsZXg6IDUwJTtcbn1cbkBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG4gIC5kb25hdGlvbnMtcGFnZSAuYWNjb3VudC1wYWdlLWFjb3VudC1vdmVydmlldyB7XG4gICAgcGFkZGluZzogMTZweCAzMnB4IDE2cHggMzJweDtcbiAgfVxuICAuZG9uYXRpb25zLXBhZ2UgLmFjY291bnQtcGFnZS1hY291bnQtb3ZlcnZpZXcgLnJvdW5kLWljb24ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbiAgLmRvbmF0aW9ucy1wYWdlIC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3IC5hY2NvdW50LXBhZ2UtYWNvdW50LW92ZXJ2aWV3LWluZm8ge1xuICAgIHBhZGRpbmctdG9wOiA4cHg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogZW5kO1xuICB9XG4gIC5kb25hdGlvbnMtcGFnZSAuYWNjb3VudC1wYWdlLWNvbnRlbnQge1xuICAgIHBhZGRpbmctbGVmdDogMTZweDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxNnB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbiAgLmRvbmF0aW9ucy1wYWdlIC5hY2NvdW50LXBhZ2UtY29udGVudCAuYWNjb3VudC1wYWdlLWNvbnRlbnQtY29sdW1uIHtcbiAgICBmbGV4OiAxO1xuICB9XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/containers/donations-page/donations-page.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/containers/donations-page/donations-page.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: DonationsPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DonationsPageComponent", function() { return DonationsPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm2015/store.js");
+/* harmony import */ var _store_reducers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/reducers */ "./src/app/store/reducers/index.ts");
+/* harmony import */ var _store_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../store/actions */ "./src/app/store/actions/index.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _services_account_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../services/account.service */ "./src/app/services/account.service.ts");
+
+
+
+
+
+
+
+
+let DonationsPageComponent = class DonationsPageComponent {
+    constructor(accountService, store, cd) {
+        this.accountService = accountService;
+        this.store = store;
+        this.cd = cd;
+        this.accounts = [];
+        this.allAcountsOverview = { current: 0, available: 0 };
+        this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+    }
+    ngOnInit() {
+        this.store.dispatch(_store_actions__WEBPACK_IMPORTED_MODULE_4__["AccountActions"].loadExtendedAndDetailedAccounts());
+        this.store
+            .pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_2__["select"])(_store_reducers__WEBPACK_IMPORTED_MODULE_3__["selectAllAccounts"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroyed$))
+            .subscribe(accounts => {
+            this.accounts = accounts;
+            this.allAcountsOverview = this.accountService.getAllAcountOverview(accounts);
+            this.cd.markForCheck();
+        });
+    }
+    ngOnDestroy() {
+        console.log("this.accounts", this.accounts);
+        this.destroyed$.next();
+        this.destroyed$.complete();
+    }
+};
+DonationsPageComponent.ctorParameters = () => [
+    { type: _services_account_service__WEBPACK_IMPORTED_MODULE_7__["AccountService"] },
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
+];
+DonationsPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'ffdc-donations-page',
+        template: __webpack_require__(/*! raw-loader!./donations-page.component.html */ "./node_modules/raw-loader/index.js!./src/app/containers/donations-page/donations-page.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        host: {
+            class: 'donations-page'
+        },
+        styles: [__webpack_require__(/*! ./donations-page.component.scss */ "./src/app/containers/donations-page/donations-page.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_account_service__WEBPACK_IMPORTED_MODULE_7__["AccountService"], _ngrx_store__WEBPACK_IMPORTED_MODULE_2__["Store"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]])
+], DonationsPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/containers/donations-page/donations-page.module.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/containers/donations-page/donations-page.module.ts ***!
+  \********************************************************************/
+/*! exports provided: DonationsPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DonationsPageModule", function() { return DonationsPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _donations_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./donations-page.component */ "./src/app/containers/donations-page/donations-page.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _components_account_list_account_list_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/account-list/account-list.module */ "./src/app/components/account-list/account-list.module.ts");
+/* harmony import */ var _account_transaction_account_transaction_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../account-transaction/account-transaction.module */ "./src/app/containers/account-transaction/account-transaction.module.ts");
+/* harmony import */ var _material_modules__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../material-modules */ "./src/app/material-modules.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
+
+
+
+
+
+
+
+let DonationsPageModule = class DonationsPageModule {
+};
+DonationsPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_donations_page_component__WEBPACK_IMPORTED_MODULE_3__["DonationsPageComponent"]],
+        imports: [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+            _material_modules__WEBPACK_IMPORTED_MODULE_7__["MaterialModules"],
+            _components_account_list_account_list_module__WEBPACK_IMPORTED_MODULE_5__["AccountListModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild([
+                {
+                    path: '',
+                    component: _donations_page_component__WEBPACK_IMPORTED_MODULE_3__["DonationsPageComponent"]
+                }
+            ]),
+            _account_transaction_account_transaction_module__WEBPACK_IMPORTED_MODULE_6__["AccountTransactionModule"]
+        ],
+        exports: [_donations_page_component__WEBPACK_IMPORTED_MODULE_3__["DonationsPageComponent"]],
+        entryComponents: [_donations_page_component__WEBPACK_IMPORTED_MODULE_3__["DonationsPageComponent"]]
+    })
+], DonationsPageModule);
 
 
 
@@ -1447,6 +2431,77 @@ AccountTransactionApiService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"](
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
 ], AccountTransactionApiService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/account.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/account.service.ts ***!
+  \*********************************************/
+/*! exports provided: AccountService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountService", function() { return AccountService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AccountService = class AccountService {
+    constructor() { }
+    getAccountOverview(account) {
+        const extendAccount = account;
+        const currentBalance = extendAccount.balances
+            ? extendAccount.balances.find(balence => balence.type === 'current')
+            : undefined;
+        const avaibleBalance = extendAccount.balances
+            ? extendAccount.balances.find(balence => balence.type === 'available')
+            : undefined;
+        const accountNumber = extendAccount.accountNumber ? extendAccount.accountNumber : '';
+        return {
+            nickname: account.nickname,
+            currentBalance: currentBalance ? currentBalance.amount : 0,
+            availableBalance: avaibleBalance ? avaibleBalance.amount : 0,
+            accountNumber
+        };
+    }
+    getAccountInterestPaid(account) {
+        const extendAccount = account;
+        const interestThisYear = extendAccount.details
+            ? extendAccount.details.find(detail => detail.label === 'Interest Paid Year to Date')
+            : undefined;
+        const interestLastYear = extendAccount.details
+            ? extendAccount.details.find(detail => detail.label === 'Interest Paid Last Year')
+            : undefined;
+        return {
+            interestThisYear: interestThisYear ? interestThisYear.value : '$0.00',
+            interestLastYear: interestLastYear ? interestLastYear.value : '$0.00'
+        };
+    }
+    getAllAcountOverview(accounts) {
+        let current = 0;
+        let available = 0;
+        for (const account of accounts) {
+            const extendAccount = account;
+            const currentBalance = extendAccount.balances
+                ? extendAccount.balances.find(balence => balence.type === 'current')
+                : undefined;
+            const avaibleBalance = extendAccount.balances
+                ? extendAccount.balances.find(balence => balence.type === 'available')
+                : undefined;
+            current += currentBalance ? currentBalance.amount : 0;
+            available += avaibleBalance ? avaibleBalance.amount : 0;
+        }
+        return { available, current };
+    }
+};
+AccountService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], AccountService);
 
 
 
@@ -2200,6 +3255,31 @@ class MergedRouterStateSerializer {
         const { params, data } = root;
         return { url, params, queryParams, data, root };
     }
+}
+
+
+/***/ }),
+
+/***/ "./src/app/utils.ts":
+/*!**************************!*\
+  !*** ./src/app/utils.ts ***!
+  \**************************/
+/*! exports provided: dateFormat, compareDate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dateFormat", function() { return dateFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compareDate", function() { return compareDate; });
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
+
+const DATE_FORMAT = 'YYYY-MM-DD';
+function dateFormat(date, format = DATE_FORMAT) {
+    return moment__WEBPACK_IMPORTED_MODULE_0___default()(date).format(format);
+}
+function compareDate(dateA, dateB) {
+    return moment__WEBPACK_IMPORTED_MODULE_0___default()(dateA, DATE_FORMAT).isBefore(moment__WEBPACK_IMPORTED_MODULE_0___default()(dateB, DATE_FORMAT)) ? 1 : -1;
 }
 
 

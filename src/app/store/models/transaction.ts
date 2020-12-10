@@ -14,6 +14,7 @@ export interface AccountTransaction {
   description2: string;
   transactionCategory: string;
   markAttended: boolean;
+  organisation?: string;
 }
 export interface AccountTransactionDetail {
   value: string;

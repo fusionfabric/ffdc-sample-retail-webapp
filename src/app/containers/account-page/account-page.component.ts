@@ -47,6 +47,7 @@ export class AccountPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    console.log("this.destoyed", this.destroyed$)
     this.destroyed$.next();
     this.destroyed$.complete();
   }

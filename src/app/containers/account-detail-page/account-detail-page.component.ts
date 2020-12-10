@@ -50,6 +50,7 @@ export class AccountDetailPageComponent implements OnInit, OnDestroy {
         if (account) {
           this.acountsOverview = this.accountService.getAccountOverview(account);
           this.account = account;
+          console.log("account", this.account);
           this.cd.markForCheck();
         }
       });

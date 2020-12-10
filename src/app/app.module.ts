@@ -22,6 +22,7 @@ import { MergedRouterStateSerializer } from './store/reducers/merged-route-seria
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BannerModule } from './components/donations-banner/donations-banner.module';
+import { DonationsPageModule } from './containers/donations-page/donations-page.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -33,6 +34,7 @@ import { BannerModule } from './components/donations-banner/donations-banner.mod
     HttpClientModule,
     MaterialModules,
     AppRoutingModule,
+    DonationsPageModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     EffectsModule.forRoot([AccountEffects, AccountTransactionEffects]),
     StoreRouterConnectingModule.forRoot({

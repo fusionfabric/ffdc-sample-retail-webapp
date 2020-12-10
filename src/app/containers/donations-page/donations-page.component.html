@@ -1,0 +1,41 @@
+<div class="donations-page-overview">
+  <div class="acount-page-all-acount-text uxg-display-4">Your balance</div>
+  <div class="account-page-acount-overview-info">
+    <div class="round-icon">
+      <mat-icon aria-hidden="false" aria-label="Account">credit_card</mat-icon>
+    </div>
+    <div class="account-page-acount-overview-info-detail">
+      <div class="uxg-subtitle-2">Available Balance:</div>
+      <div class="uxg-h5">{{ allAcountsOverview.available | currency }}</div>
+    </div>
+  </div>
+  <div class="acount-page-all-acount-text uxg-display-4">Select an account</div>
+  <mat-form-field appearance="fill">
+    <mat-select placeholder="--">
+      <mat-option *ngFor="let account of accounts" [value]="account.accountId">
+        {{ account.nickname }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="acount-page-all-acount-text uxg-display-4">Select an ammount</div>
+  <mat-form-field appearance="fill">
+    <input type="number" matInput placeholder="Ex. $10" />
+  </mat-form-field>
+  <div class="acount-page-all-acount-text uxg-display-4">How often do you want to support this cause?</div>
+  <div fxLayout="row">
+    <button mat-flat-button class="donate-button" color="accent">
+      Every 6 months
+    </button>
+    <button mat-flat-button class="donate-button" color="accent">
+      Every 12 months
+    </button>
+  </div>
+  <div>
+    <button mat-stroked-button color="accent">
+      Cancel
+    </button>
+    <button mat-flat-button color="accent">
+      Donate!
+    </button>
+  </div>
+</div>

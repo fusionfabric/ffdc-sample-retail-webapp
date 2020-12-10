@@ -18,14 +18,14 @@ export class DonationsBannerComponent {
   };
 
   @Output() action = new EventEmitter<any>();
-  @Output() dismiss = new EventEmitter<any>();
 
   onAction() {
+    this.onDismiss();
     this.action.emit();
   }
 
   onDismiss() {
-    this.dismiss.emit();
+    this.donationsBanner.enabled = false;
   }
 
   constructor() {}
