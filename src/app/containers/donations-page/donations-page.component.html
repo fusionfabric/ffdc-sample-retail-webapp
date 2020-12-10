@@ -11,7 +11,7 @@
   </div>
   <div class="acount-page-all-acount-text uxg-display-4">Select an account</div>
   <mat-form-field appearance="fill">
-    <mat-select placeholder="--">
+    <mat-select placeholder="--" [(ngModel)]="selectedAccount">
       <mat-option *ngFor="let account of accounts" [value]="account.accountId">
         {{ account.nickname }}
       </mat-option>
@@ -19,14 +19,14 @@
   </mat-form-field>
   <div class="acount-page-all-acount-text uxg-display-4">Select an ammount</div>
   <mat-form-field appearance="fill">
-    <input type="number" matInput placeholder="Ex. $10" />
+    <input [(ngModel)]="donationAmmount" type="number" matInput placeholder="Ex. $10" />
   </mat-form-field>
   <div class="acount-page-all-acount-text uxg-display-4">How often do you want to support this cause?</div>
   <div fxLayout="row">
-    <button mat-flat-button class="donate-button" color="accent">
+    <button mat-flat-button (click)="setInterval(6)" class="donate-button" color="accent">
       Every 6 months
     </button>
-    <button mat-flat-button class="donate-button" color="accent">
+    <button mat-flat-button (click)="setInterval(6)" class="donate-button" color="accent">
       Every 12 months
     </button>
   </div>

@@ -28,6 +28,9 @@ import {FormControl, Validators} from '@angular/forms';
 export class DonationsPageComponent implements OnInit, OnDestroy {
   accounts: AccountEntity[] = [];
   allAcountsOverview: AllAccountsOverview = { current: 0, available: 0 };
+  selectedAccount: any;
+  donationAmmount: number = 0;
+  donationInterval: number = 0;
 
   private destroyed$ = new Subject<any>();
 
@@ -53,5 +56,14 @@ export class DonationsPageComponent implements OnInit, OnDestroy {
     this.destroyed$.next();
     this.destroyed$.complete();
   }
+
+  setInterval(interval:number) {
+    this.donationInterval = interval;
+    console.log("donationInterval", this.donationInterval);
+    console.log("donationAmmount", this.donationAmmount);
+    console.log("selectedAccount", this.selectedAccount);
+  }
+
+  
 }
 

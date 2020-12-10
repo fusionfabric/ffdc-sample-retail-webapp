@@ -459,7 +459,7 @@ module.exports = "<mat-card>\r\n  <div class=\"account-transaction-header\">\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"donations-page-overview\">\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Your balance</div>\r\n  <div class=\"account-page-acount-overview-info\">\r\n    <div class=\"round-icon\">\r\n      <mat-icon aria-hidden=\"false\" aria-label=\"Account\">credit_card</mat-icon>\r\n    </div>\r\n    <div class=\"account-page-acount-overview-info-detail\">\r\n      <div class=\"uxg-subtitle-2\">Available Balance:</div>\r\n      <div class=\"uxg-h5\">{{ allAcountsOverview.available | currency }}</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an account</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <mat-select placeholder=\"--\">\r\n      <mat-option *ngFor=\"let account of accounts\" [value]=\"account.accountId\">\r\n        {{ account.nickname }}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an ammount</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <input type=\"number\" matInput placeholder=\"Ex. $10\" />\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">How often do you want to support this cause?</div>\r\n  <div fxLayout=\"row\">\r\n    <button mat-flat-button class=\"donate-button\" color=\"accent\">\r\n      Every 6 months\r\n    </button>\r\n    <button mat-flat-button class=\"donate-button\" color=\"accent\">\r\n      Every 12 months\r\n    </button>\r\n  </div>\r\n  <div>\r\n    <button mat-stroked-button color=\"accent\">\r\n      Cancel\r\n    </button>\r\n    <button mat-flat-button color=\"accent\">\r\n      Donate!\r\n    </button>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"donations-page-overview\">\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Your balance</div>\r\n  <div class=\"account-page-acount-overview-info\">\r\n    <div class=\"round-icon\">\r\n      <mat-icon aria-hidden=\"false\" aria-label=\"Account\">credit_card</mat-icon>\r\n    </div>\r\n    <div class=\"account-page-acount-overview-info-detail\">\r\n      <div class=\"uxg-subtitle-2\">Available Balance:</div>\r\n      <div class=\"uxg-h5\">{{ allAcountsOverview.available | currency }}</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an account</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <mat-select placeholder=\"--\" [(ngModel)]=\"selectedAccount\">\r\n      <mat-option *ngFor=\"let account of accounts\" [value]=\"account.accountId\">\r\n        {{ account.nickname }}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">Select an ammount</div>\r\n  <mat-form-field appearance=\"fill\">\r\n    <input [(ngModel)]=\"donationAmmount\" type=\"number\" matInput placeholder=\"Ex. $10\" />\r\n  </mat-form-field>\r\n  <div class=\"acount-page-all-acount-text uxg-display-4\">How often do you want to support this cause?</div>\r\n  <div fxLayout=\"row\">\r\n    <button mat-flat-button (click)=\"setInterval(6)\" class=\"donate-button\" color=\"accent\">\r\n      Every 6 months\r\n    </button>\r\n    <button mat-flat-button (click)=\"setInterval(6)\" class=\"donate-button\" color=\"accent\">\r\n      Every 12 months\r\n    </button>\r\n  </div>\r\n  <div>\r\n    <button mat-stroked-button color=\"accent\">\r\n      Cancel\r\n    </button>\r\n    <button mat-flat-button color=\"accent\">\r\n      Donate!\r\n    </button>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1964,6 +1964,8 @@ let DonationsPageComponent = class DonationsPageComponent {
         this.cd = cd;
         this.accounts = [];
         this.allAcountsOverview = { current: 0, available: 0 };
+        this.donationAmmount = 0;
+        this.donationInterval = 0;
         this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
     }
     ngOnInit() {
@@ -1980,6 +1982,12 @@ let DonationsPageComponent = class DonationsPageComponent {
         console.log("this.accounts", this.accounts);
         this.destroyed$.next();
         this.destroyed$.complete();
+    }
+    setInterval(interval) {
+        this.donationInterval = interval;
+        console.log("donationInterval", this.donationInterval);
+        console.log("donationAmmount", this.donationAmmount);
+        console.log("selectedAccount", this.selectedAccount);
     }
 };
 DonationsPageComponent.ctorParameters = () => [
@@ -2597,7 +2605,7 @@ GlobalsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!***********************************!*\
   !*** ./src/app/services/index.ts ***!
   \***********************************/
-/*! exports provided: AccountApiService, AuthService, UserService, GlobalsService, AccountTransactionApiService */
+/*! exports provided: AuthService, AccountApiService, UserService, GlobalsService, AccountTransactionApiService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
