@@ -25,11 +25,15 @@ export async function initialize(app: Application) {
     client_secret: config.client_secret
   });
   client.CLOCK_TOLERANCE = 10;
+  
+  const uuid = require('uuid');
 
   const params = {
     redirect_uri: config.redirect_uri,
     response_type: 'code',
-    scope: 'openid profile email User.Read offline_access'
+    scope: 'openid profile email User.Read offline_access',
+    nonce: uuid.v4()
+
   };
 
   passport.use(
