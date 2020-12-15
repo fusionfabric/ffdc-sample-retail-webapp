@@ -18,6 +18,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/flex-layout": "^8.0.0-beta.26",
     "@angular/pwa": "^0.901.7",
     "body-parser": "1.19.0",
     "compression": "1.7.4",

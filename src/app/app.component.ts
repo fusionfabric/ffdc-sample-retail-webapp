@@ -28,7 +28,9 @@ export class AppComponent {
       store.pipe(select(selectRouteParams)),
       store.pipe(select(selectRouteData))
     ).subscribe(([accounts, routeParams, routeData]) => {
+      console.log("routeParams", routeParams);
       if (routeData) {
+        console.log("RouteData", routeData);
         if (routeData.viewId === 'accounts') {
           this.navbarMenuData = [
             {

@@ -1,0 +1,21 @@
+@mixin ffdc-donations-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $warn: map-get($theme, warn);
+  
+  ffdc-donations-page {
+    background-color: mat-color($background, 'app-bar');
+    
+  } 
+
+  .donations-page {
+    .account-page-acount-overview {
+      background-color: mat-color($background, 'app-bar');
+    }
+    .acount-page-all-acount-text {
+      color: mat-color($primary);
+    }
+  }
+}

@@ -2,7 +2,8 @@
 @import './app/components/account-card/account-card.theme';
 @import './app/components/app-layout/app-layout.theme';
 @import './app/components/account-transaction-list/account-transaction-list.theme';
-
+@import './app/components/donations-banner/donations-banner.theme';
+@import './app/containers/donations-page/donations-page.theme';
 @import './app/containers/account-page/account-page.theme';
 @import './app/containers/account-detail-page/account-detail-page.theme';
 @import './app/containers/account-transaction/account-transaction.theme';
@@ -15,3 +16,5 @@
 @include app-layout-theme($uxg-light-theme);
 @include account-transaction-theme($uxg-light-theme);
 @include account-transaction-list-theme($uxg-light-theme);
+@include ffdc-donations-banner-theme($uxg-light-theme);
+@include ffdc-donations-theme($uxg-light-theme);

@@ -107,6 +107,7 @@ export class AccountTransactionComponent implements OnInit, OnDestroy {
       )
       .subscribe(accountTransactions => {
         this.accountTransactions = accountTransactions;
+        console.log(this.accountTransactions);
         this.cd.markForCheck();
       });
     this.searching$ = this.store.pipe(select(isSearchingAccountTransactions));

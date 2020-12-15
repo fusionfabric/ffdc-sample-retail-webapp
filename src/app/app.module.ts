@@ -21,17 +21,20 @@ import { HomePageModule } from './containers/home-page/home-page.module';
 import { MergedRouterStateSerializer } from './store/reducers/merged-route-serialzer';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { BannerModule } from './components/donations-banner/donations-banner.module';
+import { DonationsPageModule } from './containers/donations-page/donations-page.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BannerModule,
     BrowserAnimationsModule,
     HomePageModule,
     AppLayoutModule,
     HttpClientModule,
     MaterialModules,
     AppRoutingModule,
+    DonationsPageModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     EffectsModule.forRoot([AccountEffects, AccountTransactionEffects]),
     StoreRouterConnectingModule.forRoot({

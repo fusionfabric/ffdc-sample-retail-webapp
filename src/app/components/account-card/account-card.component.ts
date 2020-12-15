@@ -1,8 +1,6 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input, ViewEncapsulation } from '@angular/core';
-import { AccountSummary, AccountOverview, ExtendedDetaildedAccount, AccountEntity } from '../../store/models';
-import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconRegistry } from '@angular/material/icon';
+import { ChangeDetectionStrategy, Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { AccountService } from '../../services/account.service';
+import { AccountEntity, AccountOverview } from '../../store/models';
 
 @Component({
   selector: 'ffdc-account-card',
