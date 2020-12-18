@@ -1,7 +1,8 @@
-import passport from 'passport';
 import { Application, NextFunction, Request, Response } from 'express';
-import { AuthConfig as config, LOGIN_URL, TIMEOUT } from './util/config';
+import passport from 'passport';
 import request from 'request-promise';
+import { v4 as uuidv4 } from 'uuid';
+import { AuthConfig as config, LOGIN_URL, TIMEOUT } from './util/config';
 
 const { Strategy, Issuer } = require('openid-client');
 let issuer: any;
@@ -32,9 +33,7 @@ export async function initialize(app: Application) {
     redirect_uri: config.redirect_uri,
     response_type: 'code',
     scope: 'openid profile email User.Read offline_access',
-    nonce: uuid.v4()
 
-  };
 
   passport.use(
     'oidc',
@@ -75,14 +74,16 @@ export const refreshToken = (req: Request, res: Response, next: NextFunction) =>
     }
   };
 
-  request(requestOptions).then(body => {
-    const data = JSON.parse(body);
-    req.user = { ...user, ...data };
-    res.send('OK');
-  }).catch(err => {
-    console.error(err);
-    res.status(401).send('Can not refresh token');
-  });
+  request(requestOptions)
+    .then(body => {
+      const data = JSON.parse(body);
+      req.user = { ...user, ...data };
+      res.send('OK');
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(401).send('Can not refresh token');
+    });
 };
 
 export const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
