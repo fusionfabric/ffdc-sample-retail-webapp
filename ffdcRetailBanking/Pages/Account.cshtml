@@ -1,0 +1,76 @@
+﻿@page
+@model ffdcRetailBanking.Pages.AccountModel
+@{
+	ViewData["Title"] = "Account";
+}
+
+
+<h1>Account details</h1>
+
+<form asp-antiforgery="true">
+	<select id="accounts" asp-for="SelectedAccountId" asp-items="Model.AccountSummaryListItems">
+		<option value="">-Select account-</option>
+	</select>
+	<input type="submit" disabled="@(string.IsNullOrEmpty(Model.SelectedAccountId))" /> // The access token is cached for the second call onward.
+</form>
+<hr />
+<table class="table">
+	<tbody>
+		@foreach (var modelAccountDetail in Model.AccountDetails)
+		{
+<tr>
+	<td>
+		@modelAccountDetail.Label
+	</td>
+	<td>
+		@modelAccountDetail.Value
+	</td>
+</tr>}
+	</tbody>
+</table>
+
+<hr />
+<div class="row">
+	<div class="col-12">
+		<div class="card card-body">
+			<nav>
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-token-tab" data-toggle="tab" href="#nav-token" role="tab" aria-controls="nav-token" aria-selected="true">Token</a>
+					<a class="nav-item nav-link" id="nav-code-grand-tab" data-toggle="tab" href="#nav-code-grand" role="tab" aria-controls="nav-code-grand" aria-selected="false">Authorization Code</a>
+				</div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-token" role="tabpanel" aria-labelledby="nav-token-tab">
+					<div>
+						<span class="h6">Access token</span>
+						<div class="card card-body">
+							<textarea rows="15" asp-for="Token"></textarea>
+						</div>
+						<a class="btn btn-outline-primary" asp-page-handler="SignOut" onclick="return confirm('Do you want to Sign Out?');">Log out</a>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-code-grand" role="tabpanel" aria-labelledby="nav-code-grand-tab">
+					<div>
+						<div class="card card-body">
+							<partial name="Docs/code_grand" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+
+@section Scripts
+{
+	<script>$('#accounts').on('change',
+            function () {
+                if ($(this).val()) {
+                    $('[type=submit]').prop('disabled', false);
+                }
+                else { $('[type=submit]').prop('disabled', true); }
+            })</script>
+}

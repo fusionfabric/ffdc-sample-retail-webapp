@@ -1,0 +1,101 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "FusionCreator C# Sample Client";
+}
+
+<div class="text-center">
+	<p class="display-4">
+		OAuth2.0 Sample Client Application
+	</p>
+</div>
+
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header"><strong>B2B API</strong> Current configuration:</div>
+			<div class="card-body">
+				<p class="card-text">
+					Current authentication method - <span class="font-weight-bold"><code>@Model.FinastraConfiguration.Oauth2Configuration.ClientAuthenticationMethod</code></span>
+					<br />
+					Possible methods: <code>"{client_secret | private_key_jwt}"</code>, see <code>appsettings.json</code>.
+				</p>
+				<p class="card-text">
+					This sample shows a way how to implements API client with
+					<a href="https://developer.fusionfabric.cloud/documentation/creator-apis#api-channel-type">B2B</a>
+					flow, with examples following two authentication methods:
+					<ul>
+						<li>
+							The OAuth2 <a href="https://developer.fusionfabric.cloud/documentation/oauth2-grants#oauth2-client-creds-flow">
+								client credentials
+							</a> authentication method, if you configured it with <code>client_secret</code>.
+						</li>
+						<li>
+							The enhanced <a href="https://developer.fusionfabric.cloud/documentation/oauth2-grants#jwk-auth">
+								<code>private_key_jwt</code> client authentication method
+							</a>, if you configured it with <code>private_key_jwt</code>.
+						</li>
+					</ul>
+				</p>
+				<hr />
+				<span class="font-weight-light">TokenEndpoint:</span> @Model.FinastraConfiguration.Oauth2Configuration.TokenEndpoint <br />
+				<span class="font-weight-light">AuthorityEndpoint:</span> @Model.FinastraConfiguration.Oauth2Configuration.AuthorityEndpoint <br />
+				<span class="font-weight-light">Issuer:</span> @Model.FinastraConfiguration.Oauth2Configuration.Issuer<br />
+				<span class="font-weight-light">B2B.ClientId:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2B.ClientId<br />
+				<span class="font-weight-light">B2B.ClientSecret:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2B.ClientSecret<br />
+				<span class="font-weight-light">B2B.JwkKeyId:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2B.JwkKeyId<br />
+				<span class="font-weight-light">B2B.PrivateKey:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2B.PrivateKey<br />
+				<span class="font-weight-light">PrivateKeyJwtExpirationTimeInMinutes:</span> @Model.FinastraConfiguration.Oauth2Configuration.PrivateKeyJwtExpirationTimeInMinutes    <br />
+				<span class="font-weight-light">ApiConfiguration:BaseUrl:</span> @Model.FinastraConfiguration.ApiConfiguration.BaseUrl
+			</div>
+			<div class="card-footer">
+				<a asp-page="/UtcDateTime" class="btn btn-outline-primary" role="button">Call B2B</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header"><strong>B2C API</strong> Current configuration:</div>
+			<div class="card-body">
+				<p class="card-text">
+					Current authentication method - <span class="font-weight-bold"><code>@Model.FinastraConfiguration.Oauth2Configuration.ClientAuthenticationMethod</code></span>
+					<br />
+					Possible methods: <code>"{client_secret | private_key_jwt}"</code>, see <code>appsettings.json</code>
+				</p>
+				<p class="card-text">
+					This sample shows you a way to implement an API client with
+					<a href="https://developer.fusionfabric.cloud/documentation/creator-apis#api-channel-type">B2C</a>,
+					flow, with examples following two authentication methods:
+					<ul>
+						<li>
+							The OAuth2 <a href="https://developer.fusionfabric.cloud/documentation/oauth2-grants#oauth2-auth-code-flow">
+								client credentials
+							</a> authentication method, if you configured it with <code>client_secret</code>.
+						</li>
+						<li>
+							The enhanced <a href="https://developer.fusionfabric.cloud/documentation/oauth2-grants#jwk-auth">
+								<code>private_key_jwt</code> authentication method
+							</a>, if you configured it with <code>private_key_jwt</code>.
+						</li>
+					</ul>
+				</p>
+				<hr />
+				<span class="font-weight-light">TokenEndpoint:</span> @Model.FinastraConfiguration.Oauth2Configuration.TokenEndpoint <br />
+				<span class="font-weight-light">AuthorityEndpoint:</span> @Model.FinastraConfiguration.Oauth2Configuration.AuthorityEndpoint <br />
+				<span class="font-weight-light">Issuer:</span> @Model.FinastraConfiguration.Oauth2Configuration.Issuer<br />
+				<span class="font-weight-light">B2C.ClientId:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2C.ClientId<br />
+				<span class="font-weight-light">B2C.ClientSecret:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2C.ClientSecret<br />
+				<span class="font-weight-light">B2C.JwkKeyId:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2C.JwkKeyId<br />
+				<span class="font-weight-light">B2C.PrivateKey:</span> @Model.FinastraConfiguration.Oauth2Configuration.B2C.PrivateKey<br />
+				<span class="font-weight-light">PrivateKeyJwtExpirationTimeInMinutes:</span> @Model.FinastraConfiguration.Oauth2Configuration.PrivateKeyJwtExpirationTimeInMinutes    <br />
+				<span class="font-weight-light">ApiConfiguration:BaseUrl:</span> @Model.FinastraConfiguration.ApiConfiguration.BaseUrl
+			</div>
+			<div class="card-footer">
+				<a asp-page="/Account" class="btn btn-outline-primary" role="button">Call B2C</a>
+			</div>
+
+		</div>
+	</div>
+</div>

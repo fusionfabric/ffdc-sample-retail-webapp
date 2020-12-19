@@ -1,0 +1,74 @@
+﻿@page
+@using ffdcRetailBanking.Core.Configuration
+@model ffdcRetailBanking.Pages.UtcDateTimeModel
+@{
+	ViewData["Title"] = "UTC DateTime";
+}
+
+
+<h1>UTC Date & Time</h1>
+
+<p>
+	Congratulations! Your client app succesfully authenticated with the FusionFabric.cloud Authorization Server and received
+	access token displayed below and the response from calling the <code>GET /datetime</code> endpoint of the
+	<a href="https://developer.fusionfabric.cloud/api/clock-v1-5ce28ddc-dbbc-11e9-9d36-2a2ae2dbcce4/docs">Clock Service API</a>.
+</p>
+
+<p>
+	<input readonly asp-for="ClockServiceResponse.CurrentTime" />
+</p>
+
+<p><a class="btn btn-outline-primary" asp-page="/.">Refresh</a> // Uses the cached access token for subsequent hits.</p>
+
+<p>For more information about the authentication method used to retrieve the response, see the coresponding tab below.</p>
+
+<hr />
+
+<div class="row">
+	<div class="col-12">
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-token-tab" data-toggle="tab" href="#nav-token" role="tab" aria-controls="nav-token" aria-selected="true">Token</a>
+				<a class="nav-item nav-link" id="nav-clientCredentials-tab" data-toggle="tab" href="#nav-clientCredentials" role="tab" aria-controls="nav-clientCredentials" aria-selected="false">
+					Client credentials
+					@if (Model.FinastraConfiguration.Oauth2Configuration.ClientAuthenticationMethod == ClientAuthenticationMethod.client_secret)
+					{
+		<span class="font-weight-bolder">
+			[Active]
+		</span>}
+				</a>
+				<a class="nav-item nav-link" id="nav-privateKeyJwt-tab" data-toggle="tab" href="#nav-privateKeyJwt" role="tab" aria-controls="nav-privateKeyJwt" aria-selected="false">
+					Private key JWT
+					@if (Model.FinastraConfiguration.Oauth2Configuration.ClientAuthenticationMethod == ClientAuthenticationMethod.private_key_jwt)
+					{
+		<span class="font-weight-bolder">
+			[Active]
+		</span>}
+				</a>
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-token" role="tabpanel" aria-labelledby="nav-token-tab">
+				<div>
+					<h4>Access token</h4>
+					<div class="card card-body">
+						<textarea rows="15" asp-for="Token"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-clientCredentials" role="tabpanel" aria-labelledby="nav-clientCredentials-tab">
+				<div>
+					<partial name="Docs/client_credentials.cshtml" />
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-privateKeyJwt" role="tabpanel" aria-labelledby="nav-privateKeyJwt-tab">
+				<div>
+					<partial name="Docs/private_key_jwt.cshtml" />
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>

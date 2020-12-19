@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>.md</title>
+	<style></style>
+</head>
+<body id="preview">
+
+	<h4 class="code-line" data-line-start=0 data-line-end=1><a id="How_it_works_0"></a>How it works</h4>
+	<p class="has-line-data" data-line-start="1" data-line-end="2">In addition to exchanging the <code>client_id</code> and <code>client_secret</code> of your FusionCreator application for the access token, your client requires your user to authenticate with a username and a password. Once the access token is retrieved, when it expires, a new token is requested in the background, using the refresh token, as described in RFC6749.</p>
+	<p class="has-line-data" data-line-start="3" data-line-end="4">To find out more about the Authorization Code Grant, see RFC6749, sections <a href="https://tools.ietf.org/html/rfc6749#section-1.3.1">1.3.1</a>, <a href="https://tools.ietf.org/html/rfc6749#section-1.5">1.5</a>, and <a href="https://tools.ietf.org/html/rfc6749#section-4.1">4.1</a>.</p>
+	<p class="has-line-data" data-line-start="5" data-line-end="6">This sample is using the <code>IdentityModel.AspNetCore</code> specific helper library for token management in <a href="http://asp.net/">ASP.NET Core</a> and the <code>Microsoft.Extensions.DependencyInjection.AddOpenIdConnect</code> library of the <a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.2">OpenIdConnect</a> package.</p>
+	<hr>
+	<h4 class="code-line" data-line-start=8 data-line-end=9><a id="Application_configuration_8"></a>Application configuration</h4>
+	<pre><code class="has-line-data" data-line-start="10" data-line-end="26">//application.Development.json
+    &quot;Finastra&quot;: {
+        &quot;Oauth2Configuration&quot;: {
+        ...
+        &quot;B2C&quot;: {
+            &quot;ClientId&quot;: &quot;&lt;%YOUR-CLIENT-ID%&gt;&quot;,
+            &quot;ClientSecret&quot;: &quot;&lt;%YOUR-SECRET-KEY%&gt;&quot;,
+            &quot;JwkKeyId&quot;: &quot;&lt;PUBLIC_KEY_ID_REGISTERED_AT_FINASTRA&gt;&quot;,
+            &quot;PrivateKey&quot;: &quot;./Keys/SampleKeys/private.der&quot;
+        },
+        &quot;ClientAuthenticationMethod&quot;: &quot;{client_secret | private_key_jwt}&quot;,
+        ...
+        }
+        ...
+    }
+    </code></pre>
+	<hr>
+	<h5 class="code-line" data-line-start=27 data-line-end=28><a id="Services_registration_27"></a>Services registration</h5>
+	<pre><code class="has-line-data" data-line-start="30" data-line-end="70">//Startup.cs
+    services.AddAuthentication(o =&gt;
+        {
+            o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            o.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+        })
+            .AddCookie()
+            .AddOpenIdConnect(o =&gt;
+            {
+                o.ClientId = Oauth2Configuration.B2C.ClientId;
+                o.ClientSecret = Oauth2Configuration.B2C.ClientSecret;
+                o.Authority = Oauth2Configuration.AuthorityEndpoint;
+                o.CallbackPath = &quot;/signin-oidc&quot;; // this path or your custom one should be registered in FFDC application configuration
+                o.SaveTokens = true;
+                o.ResponseType = OpenIdConnectResponseType.Code;
+                // Indicates a Query Response see: http://openid.net/specs/openid-connect-core-1_0.html#ImplicitAuthResponse.
+                // other variant - form POST.
+                o.ResponseMode = OpenIdConnectResponseMode.Query;
+                o.Events.OnAuthorizationCodeReceived = context =&gt;
+                {
+                    if (Oauth2Configuration.ClientAuthenticationMethod ==
+                        ClientAuthenticationMethod.client_secret)
+                    {
+                        return Task.CompletedTask;
+                        //for client secret no need to set clientAssertion.
+                    }
+
+                    var tokenGenerator = context.HttpContext.RequestServices.GetService&lt;IPrivateKeyJwtGenerator&gt;();
+                    context.TokenEndpointRequest.ClientAssertionType = OidcConstants.ClientAssertionTypes.JwtBearer;
+                    context.TokenEndpointRequest.ClientAssertion = tokenGenerator.CreateClientAuthJwt(new PrivateKeyJwtOptions
+                    {
+                        ClientId = Oauth2Configuration.B2C.ClientId,
+                        JwkKeyId = Oauth2Configuration.B2B.JwkKeyId,
+                        PrivateKeyPath = Oauth2Configuration.B2B.PrivateKey
+                    //other params if they are different in config
+                });
+                    return Task.CompletedTask;
+                };
+            });
+    </code></pre>
+	<hr>
+	<h4 class="code-line" data-line-start=72 data-line-end=73><a id="Highlights_72"></a>Highlights</h4>
+	<p class="has-line-data" data-line-start="74" data-line-end="75">Token retrieval is transparent for API user. Delegating <code>ClientAccessTokenHandler</code> handler attached via <code>.AddClientAccessTokenHandler()</code> authenticates client and retrieves access token.</p>
+	<p class="has-line-data" data-line-start="76" data-line-end="77">The authentication method is controlled via attaching custom event handler <code>OnAuthorizationCodeReceived</code> and by adding token request parameters <code>ClientAssertionType</code> and <code>ClientAssertion</code>.</p>
+
+
+</body>
+</html>

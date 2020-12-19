@@ -1,0 +1,49 @@
+﻿<h4 class="code-line" data-line-start=0 data-line-end=1><a id="How_it_works_0"></a>How it works</h4>
+<p class="has-line-data" data-line-start="1" data-line-end="2">In FusionCreator, you registered a public key, in the form of a JSON Web Key (JWK), and you used the corresponding private key to sign a JSON Web Token (JWT) that you sent in exchange for the access token below.</p>
+<p class="has-line-data" data-line-start="3" data-line-end="4">This client authenticates in accordance with <a href="https://tools.ietf.org/html/rfc7523">RFC 7523</a> - <code>[OAuth.JWT]</code> and <a href="https://tools.ietf.org/html/rfc7521">RFC 7521</a> - <code>[OAuth.Assertions]</code>.</p>
+<p class="has-line-data" data-line-start="5" data-line-end="6">This sample is using the  <code>IdentityModel</code> open source library and <code>IdentityModel.AspNetCore</code> specific helper library for token management in <a href="http://ASP.NET">ASP.NET</a> Core. For more details, such as the Nuget and GitHub repositories, see the <a href="https://identitymodel.readthedocs.io/en/latest/#identitymodel">project documentation</a>.</p>
+<hr>
+<h4 class="code-line" data-line-start=8 data-line-end=9><a id="Application_Configuration_8"></a>Application Configuration</h4>
+<p class="has-line-data" data-line-start="9" data-line-end="10"><code>&quot;ClientAuthenticationMethod&quot;: &quot;private_key_jwt&quot;</code></p>
+<h5 class="code-line" data-line-start=11 data-line-end=12><a id="Services_Registration_11"></a>Services Registration</h5>
+<p class="has-line-data" data-line-start="12" data-line-end="13">For this client authentication method you must create a signed JWT and send it to <code>TokenEndpoint</code> with the parameter <code>urn:ietf:params:oauth:client-assertion-type:jwt-bearer</code>.</p>
+<pre><code class="has-line-data" data-line-start="15" data-line-end="26">// Startup.cs
+public void ConfigureServices(IServiceCollection services)
+{
+...
+ services.AddAccessTokenManagement(o =&gt;{
+     o.Client.Clients.Add(&quot;finastra_login_service&quot;, new ClientCredentialsTokenRequest {
+        Address = TokenEndpoint});
+    });
+...
+}
+</code></pre>
+<p class="has-line-data" data-line-start="27" data-line-end="28"><code>DefaultTokenClientConfigurationService.GetClientCredentialsRequestAsync()</code> is overriden and the <code>ClientAssertion</code> value is generated from <code>PrivateKeyJwtGenerator</code> service.</p>
+<p class="has-line-data" data-line-start="29" data-line-end="30">The  JWT is created by <code>PrivateKeyJwtGenerator</code> following the specifications from <a href="https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication">OpenID Connect Core 1.0</a>.</p>
+<p class="has-line-data" data-line-start="31" data-line-end="32">The token contains the following claims:</p>
+<ul>
+	<li class="has-line-data" data-line-start="33" data-line-end="35">
+		<code>iss</code><br>
+		REQUIRED. Issuer. This MUST contain the <code>client_id</code> of the OAuth Client.
+	</li>
+	<li class="has-line-data" data-line-start="35" data-line-end="37">
+		<code>sub</code><br>
+		REQUIRED. Subject. This MUST contain the <code>client_id</code> of the OAuth Client.
+	</li>
+	<li class="has-line-data" data-line-start="37" data-line-end="39">
+		<code>aud</code><br>
+		REQUIRED. Audience. The aud (audience) Claim. Value that identifies the Authorization Server as an intended audience. The Authorization Server MUST verify that it is an intended audience for the token. The Audience SHOULD be the URL of the Authorization Server’s Token Endpoint.
+	</li>
+	<li class="has-line-data" data-line-start="39" data-line-end="41">
+		<code>jti</code><br>
+		REQUIRED. JWT ID. A unique identifier for the token, which can be used to prevent reuse of the token. These tokens MUST only be used once, unless conditions for reuse were negotiated between the parties; any such negotiation is beyond the scope of this specification.
+	</li>
+	<li class="has-line-data" data-line-start="41" data-line-end="43">
+		<code>exp</code><br>
+		REQUIRED. Expiration time on or after which the ID Token MUST NOT be accepted for processing.
+	</li>
+	<li class="has-line-data" data-line-start="43" data-line-end="45">
+		<code>iat</code><br>
+		OPTIONAL. Time at which the JWT was issued.
+	</li>
+</ul>
