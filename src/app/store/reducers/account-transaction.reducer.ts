@@ -30,7 +30,7 @@ export const reducer = createReducer(
   ),
   on(AccountTransactionApiActions.searchAccountTransactionsSuccess, (state, { type, accountTransactions }) => {
     state.searching = false;
-    return adapter.addAll(accountTransactions, state);
+    return adapter.setAll(accountTransactions, state);
   }),
   on(AccountTransactionApiActions.searchAccountTransactionsFailure, (state, { type }) => {
     return { ...state, ...{ searching: false } };

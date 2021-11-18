@@ -1,75 +1,22 @@
-<ffdc-app-layout>
-  <ffdc-navbar-content [outlined]="(isHomePage$ | async)">
-      <ffdc-navbar-home homeUrl="." [dense]="!(isHomePage$ | async)"></ffdc-navbar-home>
-      <ffdc-navbar-menu *ngIf="!(isHomePage$ | async)" [navigationNodes]="navbarMenuData"></ffdc-navbar-menu>
-      <ffdc-navbar-action-container>
-        <ffdc-navbar-action-item icon="search" title="Search">
-          <button mat-icon-button color="neutral">
-            <mat-icon>search</mat-icon>
-          </button>
-        </ffdc-navbar-action-item>
-        <ffdc-navbar-action-item icon="notifications" title="Notifications">
-          <button mat-icon-button color="neutral">
-            <mat-icon>notifications</mat-icon>
-          </button>
-        </ffdc-navbar-action-item>
-        <ffdc-navbar-action-item icon="help_outline" title="Help">
-          <button mat-icon-button color="neutral">
-            <mat-icon>help_outline</mat-icon>
-          </button>
-        </ffdc-navbar-action-item>
-        <ffdc-navbar-action-item icon="apps" title="Applications">
-          <button mat-icon-button color="neutral">
-            <mat-icon>apps</mat-icon>
-          </button>
-        </ffdc-navbar-action-item>
-        <ffdc-navbar-action-item icon="account_circle" title="My account">
-          <button mat-icon-button color="gradient">
-            <mat-icon>account_circle</mat-icon>
-          </button>
-        </ffdc-navbar-action-item>
-      </ffdc-navbar-action-container>
-    <!-- </mat-toolbar> -->
-  </ffdc-navbar-content>
-  <ffdc-sidenav-content *ngIf="!(isHomePage$ | async)">
-    <div class="uxg-nav-header">
-      <mat-card class="uxg-card-product clickable">
-        <span class="uxg-h3 uxg-card-product-name">Ac</span>
-      </mat-card>
-    </div>
-    <mat-nav-list class="uxg-nav-list">
-      <a mat-list-item routerLink = "/" class="uxg-list-item-selected">
-        <mat-icon mat-list-icon>home</mat-icon>
-        <p>Home</p>
-      </a>
-      <a mat-list-item routerLink="/accounts">
-        <mat-icon mat-list-icon>dashboard</mat-icon>
-        <p>Accounts</p>
-      </a>
-      <a mat-list-item>
-        <mat-icon mat-list-icon>notifications</mat-icon>
-        <p>Insights</p>
-      </a>
-      <a mat-list-item>
-        <mat-icon mat-list-icon>extension</mat-icon>
-        <p>RIB & Documents</p>
-      </a>
-      <a mat-list-item>
-        <mat-icon mat-list-icon>settings</mat-icon>
-        <p>Transfer</p>
-      </a>
-      <mat-divider></mat-divider>
-    </mat-nav-list>
-    <mat-nav-list class="uxg-link-list">
-      <a mat-list-item>
-        <mat-icon mat-list-icon>help</mat-icon>
-        <p>Help</p>
-      </a>
-      <a mat-list-item href="/logout">
-        <mat-icon  mat-list-icon>power_settings_new</mat-icon>
-        <p>Sign out</p>
-      </a>
-    </mat-nav-list>
-  </ffdc-sidenav-content>
-  <router-outlet></router-outlet>
-</ffdc-app-layout>
+<uxg-global-nav [appName]="appName" [navigationNodes]="navigationNodes" [appContent]="appContent"
+    [navbarAction]="navbarAction" (nodeChosen)="nodeChosen($event)" (brandAction)="brandAction()">
+</uxg-global-nav>
+
+<ng-template #appContent>
+    <router-outlet></router-outlet>
+</ng-template>
+
+<ng-template #navbarAction>
+    <button mat-icon-button color="neutral" aria-label="notifications" aria-expanded="true">
+        <mat-icon>notifications</mat-icon>
+    </button>
+
+    <uxg-user-profile-menu dense [user]="auth.user$ | async">
+        <ng-template uxgUserProfilePanelActions>
+            <button mat-flat-button color="primary" dense>
+                <mat-icon>exit_to_app</mat-icon>
+                Logout
+            </button>
+        </ng-template>
+    </uxg-user-profile-menu>
+</ng-template>

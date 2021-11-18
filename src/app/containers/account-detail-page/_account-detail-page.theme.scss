@@ -7,17 +7,17 @@
 
   .account-detail-page {
     .acount-detail-page-overview {
-      background-color: mat-color($primary);
+     // background-color: mat-color($primary);
       .acount-detail-page-overview-account-text {
-        color: rgba(mat-contrast($primary, A100), 0.8);
+        color: mat-color($primary, default, 0.8);
       }
       color: mat-contrast($primary, A100);
     }
     .round-icon {
-      background-color: mat-color($primary, 'lighter', 0.7)
+      background-color: mat-color($primary, default, 0.7);
     }
     .mat-stroked-button:not([disabled]) {
-      border-color: rgba(mat-contrast($primary, A100), 0.8);
+      border-color: mat-color($primary, default, 0.8);
     }
   }
 }

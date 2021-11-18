@@ -21,6 +21,17 @@ import { HomePageModule } from './containers/home-page/home-page.module';
 import { MergedRouterStateSerializer } from './store/reducers/merged-route-serialzer';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { GlobalNavModule } from '@finastra/angular-components/global-nav';
+import { UxgUserProfileMenuModule } from '@finastra/angular-components/user-profile-menu';
+import { AccountCardModule } from '@finastra/angular-components/cards/account-card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { AvatarModule } from '@finastra/angular-components/avatar';
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +43,12 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     MaterialModules,
     AppRoutingModule,
+    GlobalNavModule,
+    UxgUserProfileMenuModule,
+    AccountCardModule,
+    MatIconModule, MatButtonModule, MatCardModule,
+     MatDividerModule,MatTabsModule,MatSelectModule,MatInputModule,AvatarModule,
+
     StoreModule.forRoot(ROOT_REDUCERS),
     EffectsModule.forRoot([AccountEffects, AccountTransactionEffects]),
     StoreRouterConnectingModule.forRoot({
