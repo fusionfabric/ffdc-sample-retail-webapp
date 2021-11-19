@@ -1,4 +1,7 @@
-@mixin account-transaction-theme($theme) {
+@use 'sass:map';
+@use '~@finastra/angular-theme/lib/core/theming/palette' as palette;
+
+@mixin theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $background: map-get($theme, background);
@@ -6,6 +9,6 @@
   $warn: map-get($theme, warn);
 
   .mat-tab-label-active > .mat-tab-label-content {
-    color: mat-color($primary)
+    color: palette.get-color-from-palette($primary)
   }
 }

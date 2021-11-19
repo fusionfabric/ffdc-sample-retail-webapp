@@ -1,13 +1,17 @@
-@mixin account-page-theme($theme) {
+@use 'sass:map';
+@use '~@finastra/angular-theme/lib/core/theming/palette' as palette;
+@use '~@angular/material' as mat;
+
+@mixin theme($theme) {
   $background: map-get($theme, 'background');
   $primary: map-get($theme, primary);
 
   .accounts-page {
     .account-page-acount-overview {
-      background-color: mat-color($primary, default, 0.1);
+      background-color: palette.get-color-from-palette($primary, default, 0.1);
     }
     .acount-page-all-acount-text {
-      color: mat-color($primary)
+      color: palette.get-color-from-palette($primary)
     }
   }
 }

@@ -1,4 +1,8 @@
-@mixin app-layout-theme($theme) {
+@use 'sass:map';
+@use '~@finastra/angular-theme/lib/core/theming/palette' as palette;
+@use '~@angular/material' as mat;
+
+@mixin theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $background: map-get($theme, background);
@@ -6,16 +10,12 @@
   $warn: map-get($theme, warn);
 
   .app-layout {
-    .navbar-home-logo {
-     // background: center / contain no-repeat url(map-get($foreground, logo));
-    }
-
     .app-layout-navbar {
-      background: mat-color($background, app-bar);
+      background: palette.get-color-from-palette($background, app-bar);
     }
 
     .action-menu-panel {
-      @include mat-elevation(4);
+      @include mat.elevation(4);
     }
   }
 

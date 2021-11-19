@@ -2,6 +2,14 @@
 @use '~@finastra/angular-theme' as fds;
 @use '~@finastra/angular-theme/base';
 
+@use "./app/components/account-card/account-card.theme" as card;
+@use "./app/components/app-layout/app-layout.theme" as app-layout;
+@use "./app/components/account-transaction-list/account-transaction-list.theme" as account-transaction-list;
+
+@use "./app/containers/account-page/account-page.theme" as account-page;
+@use "./app/containers/account-detail-page/account-detail-page.theme" as account-detail-page;
+@use "./app/containers/account-transaction/account-transaction.theme" as account-transaction;
+@use "./app/app.theme" as app-theme;
 
 @include fds.uxg-core();
 
@@ -13,6 +21,13 @@
 // Add components theme mixins inside this mixin
 @mixin app-theme($theme) {
     @include fds.uxg-material-theme($theme);
+    @include card.theme($theme);
+    @include app-layout.theme($theme);
+    @include account-transaction-list.theme($theme);
+    @include account-page.theme($theme);
+    @include account-detail-page.theme($theme);
+    @include account-transaction.theme($theme);
+    @include app-theme.theme($theme);
 }
 
 @include app-typography(fds.$typography);
