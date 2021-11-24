@@ -69,7 +69,7 @@ export const refreshToken = (req: Request, res: Response, next: NextFunction) =>
       client_secret: config.client_secret,
       grant_type: 'refresh_token',
       refresh_token: user.refresh_token,
-      scope: 'openid profile email User.Read offline_access'
+      scope: 'openid'
     }
   };
 
