@@ -129,6 +129,7 @@ app.use('/proxy', (req, res) => {
       target: `${FFDC_URL}/retail-us/me/account/v1`
     },
     (err: any) => {
+      if (err.code === 'ECONNRESET') return;
       logger.error(err.message);
       res.writeHead(500, {
         'Content-Type': 'text/plain'
