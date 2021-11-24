@@ -30,7 +30,7 @@ export async function initialize(app: Application) {
   const params = {
     redirect_uri: config.redirect_uri,
     response_type: 'code',
-    scope: 'openid profile email User.Read offline_access',
+    scope: 'openid',
     nonce: uuidv4()
   };
 
