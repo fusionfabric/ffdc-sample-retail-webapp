@@ -21,20 +21,24 @@ You need to register an application on [FusionFabric.cloud Developer Portal](htt
 
 3. Setup environment variables
 
-Open `.env` file then add `CLIENT_ID` and `CLIENT_SECRET` of application created at step 2.
+Duplicate `.env.template` file and rename it it `.env`, then add `CLIENT_ID` and `CLIENT_SECRET` of application created at step 2.
 
 4. Run `npm install`
 
 ## Build
 
-This application contains two applications, Angular Application and ExpressJs application. so you need to run two commands :
+This application contains two applications, Angular Application and ExpressJs application
+> You will need to build both client and server
 
 ```
+# Server build
 npm run build:server
+
+# Client build
 npm run build
 ```
-
-You can also run in watch mode.
+\
+Optionnally, you can also run in watch mode.
 
 ```
 npm run build:server:watch
@@ -42,6 +46,8 @@ npm run build -- --watch
 ```
 
 To build Angular Application for production, use `npm run build -- --prod`
+
+<br>
 
 ## Running application
 
