@@ -2,9 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const passport_1 = tslib_1.__importDefault(require("passport"));
-const request_promise_1 = tslib_1.__importDefault(require("request-promise"));
-const uuid_1 = require("uuid");
 const config_1 = require("./util/config");
+const request_promise_1 = tslib_1.__importDefault(require("request-promise"));
 const { Strategy, Issuer } = require('openid-client');
 let issuer;
 function initialize(app) {
@@ -27,8 +26,7 @@ function initialize(app) {
         const params = {
             redirect_uri: config_1.AuthConfig.redirect_uri,
             response_type: 'code',
-            scope: config_1.AuthConfig.scope,
-            nonce: uuid_1.v4()
+            scope: 'openid profile email User.Read offline_access'
         };
         passport_1.default.use('oidc', new Strategy({ client, params, passReqToCallback: true }, (req, tokenset, done) => {
             done(null, {
@@ -59,16 +57,14 @@ exports.refreshToken = (req, res, next) => {
             client_secret: config_1.AuthConfig.client_secret,
             grant_type: 'refresh_token',
             refresh_token: user.refresh_token,
-            scope: config_1.AuthConfig.scope
+            scope: 'openid profile email User.Read offline_access'
         }
     };
-    request_promise_1.default(requestOptions)
-        .then(body => {
+    request_promise_1.default(requestOptions).then(body => {
         const data = JSON.parse(body);
         req.user = Object.assign({}, user, data);
         res.send('OK');
-    })
-        .catch(err => {
+    }).catch(err => {
         console.error(err);
         res.status(401).send('Can not refresh token');
     });
