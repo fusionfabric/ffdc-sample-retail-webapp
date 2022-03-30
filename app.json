@@ -16,10 +16,6 @@
         "SESSION_SECRET": {
             "description": "A secret key for verifying the integrity of session",
             "generator": "secret"
-        },
-        "SCOPE": {
-            "description": "List of information returned about the authenticated user",
-            "value": "openid"
         }
     }
 }
