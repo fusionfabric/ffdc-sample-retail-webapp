@@ -106,6 +106,8 @@ app.use('/proxy', (req, res) => {
     proxy.web(req, res, {
         target: `${config_1.FFDC_URL}/retail-us/me/account/v1`
     }, (err) => {
+        if (err.code === 'ECONNRESET')
+            return;
         logger_1.default.error(err.message);
         res.writeHead(500, {
             'Content-Type': 'text/plain'
