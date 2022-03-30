@@ -11,7 +11,6 @@ const prod = ENVIRONMENT === 'production'; // Anything else is treated as 'dev'
 export const SESSION_SECRET = process.env.SESSION_SECRET;
 export const CLIENT_ID = process.env.CLIENT_ID;
 export const CLIENT_SECRET = process.env.CLIENT_SECRET;
-export const SCOPE = process.env.SCOPE;
 
 // Tolerable variables
 export const FFDC_URL = process.env.FFDC_URL || 'https://api.fusionfabric.cloud';
@@ -47,6 +46,5 @@ export const AuthConfig = {
   client_secret: CLIENT_SECRET!,
   wellKnown: AUTHORIZATION_WELLKNOWN,
   redirect_uri: `${LOGIN_URL}/callback`,
-  logoutRedirect: `${LOGOUT_URL}?post_logout_redirect_uri=${LOGIN_URL}`,
-  scope: SCOPE
+  logoutRedirect: `${LOGOUT_URL}?post_logout_redirect_uri=${LOGIN_URL}`
 };

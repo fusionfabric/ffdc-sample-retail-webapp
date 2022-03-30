@@ -30,7 +30,7 @@ export async function initialize(app: Application) {
   const params = {
     redirect_uri: config.redirect_uri,
     response_type: 'code',
-    scope: config.scope,
+    scope: 'openid',
     nonce: uuidv4()
   };
 
@@ -69,7 +69,7 @@ export const refreshToken = (req: Request, res: Response, next: NextFunction) =>
       client_secret: config.client_secret,
       grant_type: 'refresh_token',
       refresh_token: user.refresh_token,
-      scope: config.scope
+      scope: 'openid'
     }
   };
 
